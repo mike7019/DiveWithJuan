@@ -19,28 +19,33 @@ export const translations = {
       subtitle: 'Click on a card to learn more',
       bookNow: 'Book Now',
       clickToLearn: 'Click to learn more',
+      categories: {
+        certifications: 'International Certifications',
+        experience: 'Experience Dives',
+        specialty: 'Specialty Dives'
+      },
       openWater: {
-        title: 'Open Water Diver',
+        title: 'Open Water Scuba Diver Course',
         description: 'Get your PADI certification! Learn essential diving skills and techniques to become a certified diver. Explore the underwater world with confidence and safety.'
       },
       advancedOpenWater: {
-        title: 'Advanced Open Water',
+        title: 'Advanced Open Water Diver Course',
         description: 'Take your skills to the next level! Expand your diving knowledge with specialized dives including deep diving, navigation, and more advanced techniques.'
       },
       rescueDiver: {
-        title: 'Rescue Diver',
+        title: 'Rescue Scuba Diver Course',
         description: 'Become a confident rescuer! Learn to prevent and manage problems in the water, and become more confident in your skills as a diver, knowing that you can help others if needed.'
       },
       snorkeling: {
-        title: 'Snorkeling Dive',
+        title: 'Snorkeling Diving',
         description: 'Explore the surface waters and coral reefs with just a mask and snorkel. Perfect for all ages and skill levels. Discover the beauty of Cozumel\'s shallow reefs.'
       },
       discovery: {
-        title: 'Discovery Dive',
+        title: 'Discover Scuba Diving',
         description: 'Perfect for beginners! Experience the magic of scuba diving for the first time with our professional instructors guiding you through every step in the crystal-clear waters of Cozumel.'
       },
       funDive: {
-        title: 'Fun Dive',
+        title: 'Fun Dives',
         description: 'Just dive and enjoy! Explore Cozumel\'s stunning reefs with our guided fun dives. Perfect for certified divers who want to experience the best dive sites in the area.'
       },
       driftDive: {
@@ -92,7 +97,7 @@ export const translations = {
     },
     // Hero
     hero: {
-      title: 'Cozumel, Más que un buceo, una aventura que transforma...',
+      title: 'Cozumel, Más que un buceo, una aventura que transforma',
       cta: 'BUCEA CONMIGO'
     },
     // Courses
@@ -101,6 +106,11 @@ export const translations = {
       subtitle: 'Haz clic en una tarjeta para saber más',
       bookNow: 'Reservar Ahora',
       clickToLearn: 'Haz clic para saber más',
+      categories: {
+        certifications: 'Certificaciones Internacionales',
+        experience: 'Inmersiones de Experiencia',
+        specialty: 'Inmersiones Especializadas'
+      },
       openWater: {
         title: 'Open Water Diver',
         description: '¡Obtén tu certificación PADI! Aprende habilidades y técnicas esenciales de buceo para convertirte en un buceador certificado. Explora el mundo submarino con confianza y seguridad.'
@@ -110,7 +120,7 @@ export const translations = {
         description: '¡Lleva tus habilidades al siguiente nivel! Amplía tu conocimiento de buceo con inmersiones especializadas que incluyen buceo profundo, navegación y técnicas más avanzadas.'
       },
       rescueDiver: {
-        title: 'Rescue Diver',
+        title: 'Rescue Scuba Diver',
         description: '¡Conviértete en un rescatista seguro! Aprende a prevenir y manejar problemas en el agua, y gana más confianza en tus habilidades como buceador, sabiendo que puedes ayudar a otros si es necesario.'
       },
       snorkeling: {
@@ -118,7 +128,7 @@ export const translations = {
         description: 'Explora las aguas superficiales y arrecifes de coral con solo una máscara y snorkel. Perfecto para todas las edades y niveles de habilidad. Descubre la belleza de los arrecifes poco profundos de Cozumel.'
       },
       discovery: {
-        title: 'Discovery Dive',
+        title: 'Discover Scuba Diving',
         description: '¡Perfecto para principiantes! Experimenta la magia del buceo por primera vez con nuestros instructores profesionales guiándote en cada paso en las aguas cristalinas de Cozumel.'
       },
       funDive: {
@@ -183,6 +193,11 @@ export const translations = {
       subtitle: 'Cliquez sur une carte pour en savoir plus',
       bookNow: 'Réserver',
       clickToLearn: 'Cliquez pour en savoir plus',
+      categories: {
+        certifications: 'Certifications Internationales',
+        experience: 'Plongées d\'Expérience',
+        specialty: 'Plongées Spécialisées'
+      },
       openWater: {
         title: 'Open Water Diver',
         description: 'Obtenez votre certification PADI! Apprenez les compétences et techniques essentielles de plongée pour devenir un plongeur certifié. Explorez le monde sous-marin avec confiance et sécurité.'
@@ -265,6 +280,11 @@ export const translations = {
       subtitle: 'Klicken Sie auf eine Karte, um mehr zu erfahren',
       bookNow: 'Jetzt Buchen',
       clickToLearn: 'Klicken Sie, um mehr zu erfahren',
+      categories: {
+        certifications: 'Internationale Zertifizierungen',
+        experience: 'Erlebnistauchgänge',
+        specialty: 'Spezialtauchgänge'
+      },
       openWater: {
         title: 'Open Water Diver',
         description: 'Holen Sie sich Ihre PADI-Zertifizierung! Lernen Sie wesentliche Tauchfähigkeiten und -techniken, um ein zertifizierter Taucher zu werden. Erkunden Sie die Unterwasserwelt mit Vertrauen und Sicherheit.'
@@ -347,6 +367,11 @@ export const translations = {
       subtitle: 'Clique em um cartão para saber mais',
       bookNow: 'Reservar Agora',
       clickToLearn: 'Clique para saber mais',
+      categories: {
+        certifications: 'Certificações Internacionais',
+        experience: 'Mergulhos de Experiência',
+        specialty: 'Mergulhos Especializados'
+      },
       openWater: {
         title: 'Open Water Diver',
         description: 'Obtenha sua certificação PADI! Aprenda habilidades e técnicas essenciais de mergulho para se tornar um mergulhador certificado. Explore o mundo subaquático com confiança e segurança.'
@@ -429,6 +454,11 @@ export const translations = {
       subtitle: 'לחץ על כרטיס כדי ללמוד עוד',
       bookNow: 'הזמן עכשיו',
       clickToLearn: 'לחץ כדי ללמוד עוד',
+      categories: {
+        certifications: 'הסמכות בינלאומיות',
+        experience: 'צלילות חוויה',
+        specialty: 'צלילות מיוחדות'
+      },
       openWater: {
         title: 'צולל מים פתוחים',
         description: 'קבל את הסמכת PADI שלך! למד מهارות וטכניקות צלילה חיוניות כדי להפוך לצולל מוסמך. חקור את העולם התת-ימי בביטחון ובבטיחות.'
@@ -511,6 +541,11 @@ export const translations = {
       subtitle: 'Нажмите на карточку, чтобы узнать больше',
       bookNow: 'Забронировать',
       clickToLearn: 'Нажмите, чтобы узнать больше',
+      categories: {
+        certifications: 'Международные сертификации',
+        experience: 'Опытные погружения',
+        specialty: 'Специализированные погружения'
+      },
       openWater: {
         title: 'Дайвер открытой воды',
         description: 'Получите сертификат PADI! Изучите основные навыки и техники дайвинга, чтобы стать сертифицированным дайвером. Исследуйте подводный мир с уверенностью и безопасностью.'
