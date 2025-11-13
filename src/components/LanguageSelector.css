@@ -1,0 +1,95 @@
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  color: var(--text-color);
+}
+
+.language-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.language-icon {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.current-language {
+  font-size: 20px;
+}
+
+.language-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  z-index: 1000;
+  min-width: 180px;
+}
+
+.language-option {
+  width: 100%;
+  padding: 12px 16px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: background 0.2s ease;
+  color: var(--text-color);
+  font-size: 14px;
+}
+
+.language-option:hover {
+  background: rgba(16, 132, 116, 0.1);
+}
+
+.language-option.active {
+  background: rgba(16, 132, 116, 0.2);
+  font-weight: 600;
+}
+
+.language-option .flag {
+  font-size: 20px;
+}
+
+.language-option .language-name {
+  flex: 1;
+  text-align: left;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .language-dropdown {
+    right: -10px;
+  }
+  
+  .language-button {
+    padding: 6px 10px;
+  }
+  
+  .language-icon {
+    font-size: 20px;
+  }
+  
+  .current-language {
+    font-size: 18px;
+  }
+}

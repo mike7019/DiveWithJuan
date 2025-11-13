@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://juandiving.com/</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://juandiving.com/en"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://juandiving.com/es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://juandiving.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://juandiving.com/de"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://juandiving.com/pt"/>
+    <xhtml:link rel="alternate" hreflang="he" href="https://juandiving.com/he"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://juandiving.com/ru"/>
+  </url>
+  
+  <!-- Courses Section -->
+  <url>
+    <loc>https://juandiving.com/#courses</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- About Section -->
+  <url>
+    <loc>https://juandiving.com/#about</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Gallery Section -->
+  <url>
+    <loc>https://juandiving.com/#gallery</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- Reviews Section -->
+  <url>
+    <loc>https://juandiving.com/#reviews</loc>
+    <lastmod>2025-01-01</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
