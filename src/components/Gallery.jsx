@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight, FaTimes } from 'react-icons/fa';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 import { translations } from '../translations/translations';
 import './Gallery.css';
 
@@ -50,30 +50,30 @@ const Gallery = () => {
     document.body.style.overflow = 'hidden';
   };
 
-  const closeLightbox = () => {
+  const closeLightbox = useCallback(() => {
     setLightboxOpen(false);
     document.body.style.overflow = 'auto';
-  };
+  }, []);
 
-  const goToPreviousImage = () => {
+  const goToPreviousImage = useCallback(() => {
     setCurrentImageIndex((prev) => (prev > 0 ? prev - 1 : images.length - 1));
-  };
+  }, [images.length]);
 
-  const goToNextImage = () => {
+  const goToNextImage = useCallback(() => {
     setCurrentImageIndex((prev) => (prev < images.length - 1 ? prev + 1 : 0));
-  };
+  }, [images.length]);
 
-  const handleKeyDown = (e) => {
-    if (!lightboxOpen) return;
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowLeft') goToPreviousImage();
-    if (e.key === 'ArrowRight') goToNextImage();
-  };
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!lightboxOpen) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') goToPreviousImage();
+      if (e.key === 'ArrowRight') goToNextImage();
+    };
 
-  React.useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [lightboxOpen, currentImageIndex]);
+  }, [lightboxOpen, closeLightbox, goToPreviousImage, goToNextImage]);
 
   return (
     <section className="gallery section" id="gallery" aria-labelledby="gallery-title">

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaChevronDown } from 'react-icons/fa';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 import { translations } from '../translations/translations';
 import './Hero.css';
 

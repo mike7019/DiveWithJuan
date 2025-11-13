@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import LanguageSelector from './LanguageSelector';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 import { translations } from '../translations/translations';
 import './Navigation.css';
 
@@ -24,6 +24,7 @@ const Navigation = () => {
       <div className="container nav-container">
         <div className="logo">
           <a href="/">
+            <img src="/icono.png" alt="Juan Diving Logo" className="logo-image" />
             <span>Juan Diving</span>
           </a>
         </div>

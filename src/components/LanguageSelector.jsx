@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { MdLanguage } from 'react-icons/md';
-import { useLanguage } from '../context/LanguageContext';
+import { useLanguage } from '../context/useLanguage';
 import './LanguageSelector.css';
 
 const LanguageSelector = () => {
