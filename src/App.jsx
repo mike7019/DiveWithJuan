@@ -11,11 +11,13 @@ import WhatsAppButton from './components/WhatsAppButton';
 import './App.css';
 
 function App() {
+  const baseUrl = import.meta.env.BASE_URL;
+  
   return (
     <LanguageProvider>
       <div className="video-background" aria-hidden="true">
         <video autoPlay loop muted playsInline aria-label="Background video of diving in Cozumel">
-          <source src="/videos/juan-hero.mp4" type="video/mp4" />
+          <source src={`${baseUrl}videos/juan-hero.mp4`} type="video/mp4" />
         </video>
       </div>
       <div className="App">

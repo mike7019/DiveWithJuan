@@ -8,63 +8,64 @@ const Courses = () => {
   const { language } = useLanguage();
   const t = translations[language].courses;
   const whatsappT = translations[language].whatsapp;
+  const baseUrl = import.meta.env.BASE_URL;
 
   const courses = [
     // First row - Certification Courses
     {
       id: 1,
       title: t.openWater.title,
-      image: '/images-courses/open water diver.jpg',
+      image: `${baseUrl}images-courses/open water diver.jpg`,
       description: t.openWater.description
     },
     {
       id: 2,
       title: t.advancedOpenWater.title,
-      image: '/images-courses/advanced open water.jpg',
+      image: `${baseUrl}images-courses/advanced open water.jpg`,
       description: t.advancedOpenWater.description
     },
     {
       id: 3,
       title: t.rescueDiver.title,
-      image: '/images-courses/rescue diver.jpg',
+      image: `${baseUrl}images-courses/rescue diver.jpg`,
       description: t.rescueDiver.description
     },
     // Second row - Beginner & Recreational Dives
     {
       id: 4,
       title: t.snorkeling.title,
-      image: '/images-courses/snorkeling.jpg',
+      image: `${baseUrl}images-courses/snorkeling.jpg`,
       description: t.snorkeling.description
     },
     {
       id: 5,
       title: t.discovery.title,
-      image: '/images-courses/fun dive.jpg',
+      image: `${baseUrl}images-courses/fun dive.jpg`,
       description: t.discovery.description
     },
     {
       id: 6,
       title: t.funDive.title,
-      image: '/images-courses/fun diver.jpg',
+      image: `${baseUrl}images-courses/fun diver.jpg`,
       description: t.funDive.description
     },
     // Third row - Specialty Dives
     {
       id: 7,
       title: t.driftDive.title,
-      image: '/images-courses/drift diver.jpg',
+      image: `${baseUrl}images-courses/drift diver.jpg`,
       description: t.driftDive.description
     },
     {
       id: 8,
       title: t.nightDiving.title,
-      image: '/images-courses/night diving.jpg',
+      image: `${baseUrl}images-courses/night diving.jpg`,
       description: t.nightDiving.description
     },
     {
       id: 9,
       title: t.reefCave.title,
-      image: '/images-courses/reef cave diver.jpg',
+      image: `${baseUrl}images-courses/reef cave diver.jpg`,
       description: t.reefCave.description
     }
   ];

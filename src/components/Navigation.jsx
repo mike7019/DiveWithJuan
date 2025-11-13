@@ -10,6 +10,7 @@ const Navigation = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const { language } = useLanguage();
   const t = translations[language].nav;
+  const baseUrl = import.meta.env.BASE_URL;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,7 +25,7 @@ const Navigation = () => {
       <div className="container nav-container">
         <div className="logo">
           <a href="/">
-            <img src="/icono.png" alt="Juan Diving Logo" className="logo-image" />
+            <img src={`${baseUrl}icono.png`} alt="Juan Diving Logo" className="logo-image" />
             <span>Juan Diving</span>
           </a>
         </div>
