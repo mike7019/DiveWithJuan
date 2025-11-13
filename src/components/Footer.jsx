@@ -50,7 +50,17 @@ const Footer = () => {
 
         <div className="footer-bottom">
           <p>© 2025 - JUAN DIVING</p>
-          <p>POWERED BY REACT</p>
+          <p>
+            Developed By:{' '}
+            <a 
+              href="https://wa.me/573043261092?text=Hola%2C%20estoy%20interesado%20en%20obtener%20informaci%C3%B3n%20acerca%20de%20los%20desarrollos%20web.%20%C2%BFPodr%C3%ADas%20proporcionarme%20m%C3%A1s%20detalles%3F" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="developer-link"
+            >
+              Michael Garzon +57 304 326 1092
+            </a>
+          </p>
         </div>
       </div>
     </footer>
