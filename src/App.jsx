@@ -15,7 +15,7 @@ function App() {
     <LanguageProvider>
       <div className="video-background" aria-hidden="true">
         <video autoPlay loop muted playsInline aria-label="Background video of diving in Cozumel">
-          <source src="/videos/hero-video.mp4" type="video/mp4" />
+          <source src="/videos/juan-hero.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="App">
