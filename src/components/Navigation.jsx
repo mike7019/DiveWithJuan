@@ -25,8 +25,8 @@ const Navigation = () => {
       <div className="container nav-container">
         <div className="logo">
           <a href="/">
-            <img src={`${baseUrl}icono.png`} alt="Juan Diving Logo" className="logo-image" />
-            <span>Juan Diving</span>
+            <img src={`${baseUrl}icono.png`} alt="Social Diving Club Logo" className="logo-image" />
+            <span>Social Diving Club</span>
           </a>
         </div>
 
