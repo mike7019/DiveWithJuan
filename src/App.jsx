@@ -5,6 +5,7 @@ import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
 import Courses from './components/Courses';
+import Features from './components/Features';
 import Gallery from './components/Gallery';
 import Reviews from './components/Reviews';
 import Footer from './components/Footer';
@@ -28,6 +29,7 @@ function HomePage() {
         </header>
         <main>
           <Hero />
+          <Features />
           <Courses />
           <About />       
           <Gallery />

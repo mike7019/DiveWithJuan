@@ -146,6 +146,13 @@ const CourseDetailPage = () => {
                 {/* Sidebar */}
                 <aside className="course-detail-sidebar">
                   <div className="booking-card">
+                    {course.price && (
+                      <div className="booking-price">
+                        <h2>{course.price}</h2>
+                        <p>{language === 'en' ? 'per person' : 'por persona'}</p>
+                      </div>
+                    )}
+                    
                     {course.duration && (
                       <div className="booking-info">
                         <h3>{language === 'en' ? 'Duration' : 'Duración'}</h3>
@@ -160,8 +167,8 @@ const CourseDetailPage = () => {
                     <div className="booking-note">
                       <p>
                         {language === 'en' 
-                          ? 'Contact us via WhatsApp for availability and pricing' 
-                          : 'Contáctanos por WhatsApp para disponibilidad y precios'}
+                          ? 'Contact us via WhatsApp to confirm availability' 
+                          : 'Contáctanos por WhatsApp para confirmar disponibilidad'}
                       </p>
                     </div>
                   </div>

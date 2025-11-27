@@ -18,10 +18,10 @@ const Hero = () => {
   return (
     <section className="hero" id="home" aria-label="Welcome to Juan Diving Cozumel">
       <div className="hero-content">
-        <p className="hero-subtitle">PADI SCUBA INSTRUCTION, PERSONALIZED DIVING & SNORKEL TOURS IN COZUMEL</p>
         <h1 className="hero-title">
           {t.title}
         </h1>
+        <p className="hero-subtitle">{t.subtitle}</p>
         <a href="#courses" className="btn-primary" aria-label="Explore our diving courses">{t.cta}</a>
       </div>
 

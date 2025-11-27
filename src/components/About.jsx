@@ -6,6 +6,7 @@ import './About.css';
 const About = () => {
   const { language } = useLanguage();
   const t = translations[language].about;
+  const baseUrl = import.meta.env.BASE_URL;
 
   return (
     <section className="about section" id="about" aria-labelledby="about-title">
@@ -13,7 +14,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-image">
             <img 
-              src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=800&h=1000&fit=crop" 
+              src={`${baseUrl}about me.jpg`} 
               alt="Juan Rodriguez - Professional PADI Scuba Diving Instructor in Cozumel, Mexico" 
               loading="lazy"
             />

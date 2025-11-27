@@ -164,6 +164,27 @@
   margin-bottom: 30px;
 }
 
+.booking-price {
+  text-align: center;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 2px solid rgba(0, 123, 255, 0.2);
+}
+
+.booking-price h2 {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.booking-price p {
+  font-size: 14px;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 .booking-info {
   text-align: center;
   margin-bottom: 30px;

@@ -39,7 +39,7 @@ const Navigation = () => {
           <li><a href="#courses">{t.courses}</a></li>
           <li><a href="#about">{t.about}</a></li>
           <li><a href="#gallery">{t.gallery}</a></li>
-          <li><a href="#reviews">{t.reviews}</a></li>
+          <li><a href="#contact">{t.contact}</a></li>
         </ul>
 
         <div className="nav-secondary">

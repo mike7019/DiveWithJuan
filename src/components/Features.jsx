@@ -1,39 +1,53 @@
 import React from 'react';
-import { FaGlobe, FaStar, FaLeaf, FaCoffee, FaTint } from 'react-icons/fa';
+import { useLanguage } from '../context/useLanguage';
+import { translations } from '../translations/translations';
+import { Icon } from '@iconify/react';
 import './Features.css';
 
 const Features = () => {
+  const { language } = useLanguage();
+  const t = translations[language].features;
+
   const features = [
     {
-      icon: <FaGlobe />,
-      title: 'WORLD CLASS DIVE SPOTS'
+      id: 1,
+      icon: <Icon icon="map:scuba-diving" />,
+      title: t.feature1.title,
+      description: t.feature1.description
     },
     {
-      icon: <FaStar />,
-      title: 'EXPERT INSTRUCTORS, GUIDES & UNMATCHED SERVICE'
+      id: 2,
+      icon: <Icon icon="mdi:heart" />,
+      title: t.feature2.title,
+      description: t.feature2.description
     },
     {
-      icon: <FaLeaf />,
-      title: 'ECO FRIENDLY OPERATION'
+      id: 3,
+      icon: <Icon icon="mdi:fish" />,
+      title: t.feature3.title,
+      description: t.feature3.description
     },
     {
-      icon: <FaCoffee />,
-      title: 'PREMIUM SERVICE WITH WATER, SNACKS & FULLY EQUIPPED VESSELS'
-    },
-    {
-      icon: <FaTint />,
-      title: 'VARIOUS TANK SIZES AVAILABLE'
+      id: 4,
+      icon: <Icon icon="mdi:eye" />,
+      title: t.feature4.title,
+      description: t.feature4.description
     }
   ];
 
   return (
     <section className="features section">
       <div className="container">
-        <div className="features-slider">
-          {features.map((feature, index) => (
-            <div key={index} className="feature-item">
-              <div className="feature-icon">{feature.icon}</div>
-              <p className="feature-title">{feature.title}</p>
+        <h2 className="features-main-title">{t.mainTitle}</h2>
+        
+        <div className="features-grid">
+          {features.map((feature) => (
+            <div key={feature.id} className="feature-item">
+              <div className="feature-icon">
+                {feature.icon}
+              </div>
+              <h3 className="feature-title">{feature.title}</h3>
+              <p className="feature-description">{feature.description}</p>
             </div>
           ))}
         </div>

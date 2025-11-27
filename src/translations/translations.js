@@ -6,12 +6,33 @@ export const translations = {
       courses: 'Courses',
       about: 'About',
       gallery: 'Gallery',
-      reviews: 'Reviews'
+      contact: 'Contact'
     },
     // Hero
     hero: {
-      title: 'Cozumel, More than a dive, an adventure that transforms...',
-      cta: 'DIVE WITH ME'
+      title: 'DIVE INTO ADVENTURE',
+      subtitle: 'PADI instructor, Private guide & Snorkel tour',
+      cta: 'Let\'s Dive'
+    },
+    // Features
+    features: {
+      mainTitle: 'DISCOVER COZUMEL\'S MESOAMERICAN REEF AND EXPLORE UNDERWATER FASCINATING WORLD',
+      feature1: {
+        title: 'Explore Cozumel\'s reefs',
+        description: 'Explore Cozumel\'s reefs — a vibrant underwater paradise within the protected Marine Park.'
+      },
+      feature2: {
+        title: 'Caring for the ocean',
+        description: 'Caring for the ocean is part of the adventure. Every dive helps protect this natural treasure.'
+      },
+      feature3: {
+        title: 'Among colorful corals',
+        description: 'Among colorful corals and tropical fish, discover the life that makes the Caribbean so unique.'
+      },
+      feature4: {
+        title: 'The magic is in the details',
+        description: 'The magic is in the details. Look, don\'t touch — and let yourself be amazed by marine life.'
+      }
     },
     // Courses
     courses: {
@@ -26,9 +47,11 @@ export const translations = {
       },
       openWater: {
         title: 'Open Water Scuba Diver Course',
-        description: 'Get your PADI certification! Learn essential diving skills and techniques to become a certified diver. Explore the underwater world with confidence and safety.',
-        detailedDescription: 'The PADI Open Water Diver course is the world\'s most popular scuba diving certification. This comprehensive program combines academic learning, confined water training, and open water dives to give you the skills and confidence to dive independently with a buddy anywhere in the world.',
-        duration: '3-4 days',
+        shortDescription: 'Learn to dive and become a certified diver.',
+        description: 'Learn to dive and become a certified diver. The Open Water Diver course teaches you the fundamentals of scuba diving, essential skills, and includes your first ocean dives',
+        detailedDescription: 'The Open Water course is a three-day experience designed to give you the confidence, skills, and freedom to dive anywhere in the world. Throughout the course, we include all equipment, transportation, daily meals, and everything you need to feel comfortable and supported from start to finish. The schedule may vary slightly, but in general each day runs between 6 and 8 hours, keeping the experience focused yet unhurried. A personalized, fully guided path to becoming a certified diver — safe, calm, and unforgettable.',
+        duration: '3 days + online theory at your own pace',
+        price: '$500 USD',
         requirements: [
           'Minimum age: 10 years old',
           'Basic swimming skills',
@@ -36,46 +59,47 @@ export const translations = {
           'No prior diving experience required'
         ],
         includes: [
-          'PADI certification materials',
-          'All diving equipment',
-          '4 open water dives',
-          'Pool training sessions',
-          'Professional PADI instructor',
-          'Digital certification card'
+          'High-quality scuba gear for all sessions',
+          'Worldwide PADI certification upon completion',
+          'Private confined-water training in a calm, comfortable setting',
+          '4 guided open-water dives (2 shore dives + 2 boat dives)',
+          'Access to the official PADI e-Learning platform',
+          'Marine park fees',
+          'Water, snacks & comfort amenities throughout the day'
         ],
         highlights: [
-          'Learn fundamental diving skills',
-          'Explore Cozumel\'s famous reefs',
-          'Lifetime certification',
-          'Dive up to 18 meters (60 feet)',
-          'Small group sizes for personalized attention'
+          'Personalized, fully guided instruction',
+          'Worldwide certification upon completion',
+          'All equipment and amenities included',
+          'Comfortable pace with full support'
         ]
       },
       advancedOpenWater: {
-        title: 'Advanced Open Water Diver Course',
-        description: 'Take your skills to the next level! Expand your diving knowledge with specialized dives including deep diving, navigation, and more advanced techniques.',
-        detailedDescription: 'The PADI Advanced Open Water Diver course helps you increase your confidence and build your scuba skills so you can become more comfortable in the water. This is a great way to get more dives under your belt while continuing to learn under the supervision of your PADI Instructor.',
-        duration: '2-3 days',
+        title: 'Advanced Adventure Course',
+        shortDescription: 'Take your diving to the next level.',
+        description: 'Take your diving to the next level. The Advanced Open Water Diver course helps you build confidence, improve your skills, and explore deeper, more exciting environments',
+        detailedDescription: 'Take your diving to the next level with a two-day experience designed for curious, confident explorers. You\'ll strengthen your skills, dive deeper, and enjoy a selection of specialty adventure dives that match your style and interests. With personal guidance and a smooth, comfortable pace, this course helps you explore more of the ocean with confidence, ease, and a sense of true adventure.',
+        duration: '2–3 days + self-paced online study',
+        price: '$450 USD',
         requirements: [
           'PADI Open Water Diver certification (or equivalent)',
           'Minimum age: 12 years old',
           'Good physical health'
         ],
         includes: [
-          'PADI Advanced materials',
-          'All diving equipment',
-          '5 adventure dives',
-          'Deep dive (up to 30m/100ft)',
-          'Underwater navigation dive',
-          'Professional PADI instructor',
-          'Digital certification card'
+          'Access to the official digital learning materials',
+          'Five Adventure Dives customized to your interests (deep, navigation, drift, etc.)',
+          'Personalized coaching to refine buoyancy, awareness, and dive planning',
+          'All required equipment',
+          'Water & snacks',
+          'Marine park fees',
+          'Worldwide certification upon completion'
         ],
         highlights: [
-          'Explore deeper dive sites',
-          'Improve your navigation skills',
-          'Try different diving specialties',
-          'Build confidence underwater',
-          'Dive to 30 meters (100 feet)'
+          'Strengthen your diving skills',
+          'Dive deeper with confidence',
+          'Customized adventure dives',
+          'Personal guidance and smooth pace'
         ]
       },
       rescueDiver: {
@@ -111,9 +135,11 @@ export const translations = {
       },
       discovery: {
         title: 'Discover Scuba Diving',
-        description: 'Perfect for beginners! Experience the magic of scuba diving for the first time with our professional instructors guiding you through every step in the crystal-clear waters of Cozumel.',
-        detailedDescription: 'Discover Scuba Diving is a quick and easy introduction to what it takes to explore the underwater world. This experience gives you the opportunity to try scuba diving for the first time in a pool and then in the ocean under the direct supervision of a PADI Professional.',
-        duration: 'Half day (3-4 hours)',
+        shortDescription: 'Your first step into the underwater world.',
+        description: 'Your first step into the underwater world. Learn a few simple skills and enjoy a guided ocean dive in a safe, fun, and relaxed way. No certification required — just curiosity and the desire to explore.',
+        detailedDescription: 'Discover scuba diving with a relaxed, personalized experience designed for first-time divers. You\'ll start with a short briefing and practice a few basic underwater skills at your own pace. After that, enjoy two guided dives—either from shore or by boat, depending on what you prefer—exploring Cozumel\'s vibrant marine life. The full experience takes approximately 6 to 8 hours, giving you plenty of time to learn, enjoy, and feel fully confident in the water.',
+        duration: 'Half-day (6-8 hours)',
+        price: '$180 USD',
         requirements: [
           'Minimum age: 10 years old',
           'Basic swimming skills',
@@ -121,27 +147,27 @@ export const translations = {
           'No prior experience necessary'
         ],
         includes: [
-          'All diving equipment',
-          'Pool session training',
-          '1 ocean dive (max 12m/40ft)',
-          'Professional PADI instructor',
-          'Small group sizes',
-          'Underwater photos (optional)'
+          'Basic underwater skills practice in shallow water',
+          'Two guided dives (shore or boat — your choice)',
+          'Personalized coaching to ensure comfort and confidence',
+          'All required scuba equipment',
+          'Water & snacks',
+          'Marine park fees'
         ],
         highlights: [
-          'No certification required',
-          'Same-day experience',
-          'Safe shallow reef exploration',
-          'Learn basic scuba skills',
-          'Perfect introduction to diving',
-          'Can count towards Open Water certification'
+          'Relaxed, personalized experience',
+          'Practice at your own pace',
+          'Choose shore or boat dives',
+          'Explore vibrant marine life'
         ]
       },
       funDive: {
         title: 'Fun Dives',
-        description: 'Just dive and enjoy! Explore Cozumel\'s stunning reefs with our guided fun dives. Perfect for certified divers who want to experience the best dive sites in the area.',
-        detailedDescription: 'Join us for guided recreational dives to explore the world-famous reefs of Cozumel. As a certified diver, you\'ll have the opportunity to dive some of the best sites in the Caribbean, known for their crystal-clear waters, vibrant coral formations, and abundant marine life.',
-        duration: 'Half day to full day options',
+        shortDescription: 'Private, relaxed dives for certified divers.',
+        description: 'Private, relaxed, high-quality dives for certified divers seeking an underwater experience. Explore Cozumel\'s stunning reefs with personalized attention and expert guidance.',
+        detailedDescription: 'Enjoy two guided dives exploring Cozumel\'s vibrant reefs, drifting along stunning walls, and experiencing the island\'s world-class visibility. Perfect for certified divers looking for a relaxed, unforgettable underwater adventure.',
+        duration: 'Half-day',
+        price: '$150 USD',
         requirements: [
           'Valid diving certification (any agency)',
           'Minimum age: 10 years old (Junior divers)',
@@ -149,20 +175,18 @@ export const translations = {
           'Recent diving experience recommended'
         ],
         includes: [
-          'All diving equipment',
-          '2 tank dives',
-          'Professional dive guide',
-          'Boat transportation',
-          'Refreshments onboard',
-          'Marine park fees'
+          'Two guided boat dives',
+          'Small groups for a relaxed, personalized experience',
+          'Tanks & weights',
+          'Water & snacks on board',
+          'Marine park fees',
+          'Dive briefing + site selection based on conditions and experience'
         ],
         highlights: [
-          'Explore world-class dive sites',
-          'See turtles, rays, and tropical fish',
-          'Drift diving with currents',
-          'Visit famous walls and reefs',
-          'Small groups for better experience',
-          'Flexible scheduling'
+          'Explore vibrant reefs and stunning walls',
+          'World-class visibility',
+          'Relaxed, personalized experience',
+          'Small group sizes'
         ]
       },
       driftDive: {
@@ -181,7 +205,7 @@ export const translations = {
     // About
     about: {
       title: 'About Juan',
-      description: 'Hi, I\'m Juan Rodriguez, a passionate PADI scuba instructor, Trimix diver, and professional underwater photographer based in beautiful Cozumel, Mexico. Originally from Mexico, I bring over 10 years of experience guiding and teaching divers across the vibrant reefs of the Yucatán Peninsula. At Juan Diving, I specialize in private scuba tours and underwater photo experiences tailored to your skill level and interests. Whether you\'re trying Discover Scuba Diving for the first time, refreshing your skills, or exploring night dives and advanced specialities, I\'ll be there to guide you with care and passion. My mission is simple: deliver a safe, unforgettable, and fun dive experience—with a touch of concierge service. I handle every detail so you can relax, explore, and capture the magic of marine life in Cozumel\'s world-renowned coral reefs.'
+      description: 'Hi! I\'m Juan, a PADI and SSI Dive Instructor originally from Argentina. I moved to Mexico five years ago and made Cozumel my home, a place where I can live close to the ocean and share what I love most. I\'ve been diving for over six years, and my passion is to share my love for the sea and create unique, memorable underwater experiences. At Social Diving Club, we do Fun Dives, Discover Scuba Diving (DSD), Scuba Courses, and Private Diving — always focusing on comfort, safety, and a relaxed, personal experience. And when you dive with me, we take care of absolutely everything, so you can simply enjoy the ocean, breathe, and experience the moment. Let\'s dive and create something unforgettable together.'
     },
     // Gallery
     gallery: {
@@ -189,9 +213,17 @@ export const translations = {
       subtitle: 'Tag us to see your image featured on our page',
       loadMore: 'Load More'
     },
-    // Reviews
-    reviews: {
-      title: 'What Our Divers Say'
+    // Contact
+    contact: {
+      title: 'Get in Touch',
+      name: 'Name',
+      lastName: 'Last Name',
+      email: 'Email',
+      phone: 'Phone',
+      message: 'Message',
+      messagePlaceholder: 'Write your message here...',
+      send: 'Send Message',
+      newMessage: 'New Message'
     },
     // Footer
     footer: {
@@ -210,12 +242,33 @@ export const translations = {
       courses: 'Cursos',
       about: 'Acerca de',
       gallery: 'Galería',
-      reviews: 'Reseñas'
+      contact: 'Contacto'
     },
     // Hero
     hero: {
-      title: 'Cozumel, Más que un buceo, una aventura que transforma',
-      cta: 'BUCEA CONMIGO'
+      title: 'SUMÉRGETE EN LA AVENTURA',
+      subtitle: 'Instructor PADI, Guía privado & Tour de snorkel',
+      cta: 'Buceemos'
+    },
+    // Features
+    features: {
+      mainTitle: 'DESCUBRE EL ARRECIFE MESOAMERICANO DE COZUMEL Y EXPLORA EL FASCINANTE MUNDO SUBMARINO',
+      feature1: {
+        title: 'Explora los arrecifes de Cozumel',
+        description: 'Explora los arrecifes de Cozumel — un vibrante paraíso submarino dentro del Parque Marino protegido.'
+      },
+      feature2: {
+        title: 'Cuidar el océano',
+        description: 'Cuidar el océano es parte de la aventura. Cada inmersión ayuda a proteger este tesoro natural.'
+      },
+      feature3: {
+        title: 'Entre corales coloridos',
+        description: 'Entre corales coloridos y peces tropicales, descubre la vida que hace al Caribe tan único.'
+      },
+      feature4: {
+        title: 'La magia está en los detalles',
+        description: 'La magia está en los detalles. Mira, no toques — y déjate sorprender por la vida marina.'
+      }
     },
     // Courses
     courses: {
@@ -384,8 +437,8 @@ export const translations = {
     },
     // About
     about: {
-      title: 'Acerca de Juan',
-      description: 'Hola, soy Juan Rodríguez, un apasionado instructor de buceo PADI, buceador Trimix y fotógrafo submarino profesional radicado en la hermosa Cozumel, México. Originario de México, aporto más de 10 años de experiencia guiando y enseñando a buceadores en los vibrantes arrecifes de la Península de Yucatán. En Juan Diving, me especializo en tours privados de buceo y experiencias de fotografía submarina adaptadas a tu nivel de habilidad e intereses. Ya sea que estés probando Discovery Dive por primera vez, refrescando tus habilidades o explorando buceos nocturnos y especialidades avanzadas, estaré ahí para guiarte con cuidado y pasión. Mi misión es simple: ofrecer una experiencia de buceo segura, inolvidable y divertida, con un toque de servicio de conserjería. Me encargo de cada detalle para que puedas relajarte, explorar y capturar la magia de la vida marina en los arrecifes de coral de Cozumel, reconocidos mundialmente.'
+      title: 'Sobre mí',
+      description: '¡Hola! Soy Juan, Instructor de Buceo PADI y SSI, originalmente de Argentina. Me mudé a México hace cinco años y hice de Cozumel mi hogar, un lugar que me permite vivir cerca del océano y compartir lo que más amo. Llevo más de seis años buceando, y mi pasión es transmitir mi amor por el mar y crear experiencias únicas e inolvidables. En Social Diving Club, hacemos fun dives, Discover Scuba Diving (DSD), cursos de buceo y buceo privado, siempre enfocados en la comodidad, la seguridad y una experiencia relajada y personalizada. Y cuando buceás conmigo, nos encargamos absolutamente de todo, para que tu solo disfrutes del océano, respires y vivas el momento. Creemos juntos una experiencia memorable.'
     },
     // Gallery
     gallery: {
@@ -393,9 +446,17 @@ export const translations = {
       subtitle: 'Etiquétanos para ver tu imagen destacada en nuestra página',
       loadMore: 'Cargar Más'
     },
-    // Reviews
-    reviews: {
-      title: 'Lo Que Dicen Nuestros Buceadores'
+    // Contact
+    contact: {
+      title: 'Contáctanos',
+      name: 'Nombre',
+      lastName: 'Apellido',
+      email: 'Correo Electrónico',
+      phone: 'Teléfono',
+      message: 'Mensaje',
+      messagePlaceholder: 'Escribe tu mensaje aquí...',
+      send: 'Enviar Mensaje',
+      newMessage: 'Nuevo Mensaje'
     },
     // Footer
     footer: {
