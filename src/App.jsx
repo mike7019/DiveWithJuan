@@ -11,6 +11,7 @@ import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import CourseDetailPage from './pages/CourseDetailPage';
+import FAQPage from './pages/FAQPage';
 import './App.css';
 
 function HomePage() {
@@ -51,6 +52,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/course/:courseId" element={<CourseDetailPage />} />
+          <Route path="/faqs" element={<FAQPage />} />
         </Routes>
       </Router>
     </LanguageProvider>

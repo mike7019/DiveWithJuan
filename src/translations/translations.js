@@ -6,7 +6,8 @@ export const translations = {
       courses: 'Courses',
       about: 'About',
       gallery: 'Gallery',
-      contact: 'Contact'
+      contact: 'Contact',
+      faqs: 'FAQs'
     },
     // Hero
     hero: {
@@ -242,7 +243,8 @@ export const translations = {
       courses: 'Cursos',
       about: 'Acerca de',
       gallery: 'Galería',
-      contact: 'Contacto'
+      contact: 'Contacto',
+      faqs: 'Preguntas Frecuentes'
     },
     // Hero
     hero: {
