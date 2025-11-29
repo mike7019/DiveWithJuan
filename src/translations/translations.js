@@ -57,7 +57,6 @@ export const translations = {
         experience: 'Experience Dives',
         specialty: 'Specialty Dives'
       },
-      medicalFormReq: 'All participants must complete a standard medical form before diving. Please review it <LINK>here</LINK> to confirm you’re fully fit for the activity.',
       openWater: {
         title: 'Open Water Scuba Diver Course',
         shortDescription: 'Learn to dive and become a certified diver.',
@@ -264,8 +263,8 @@ export const translations = {
     },
     // Why Cozumel
     whyCozumel: {
-      title: 'WHY CHOOSE COZUMEL ?',
-      description: 'Here you dive in crystal-clear water with endless visibility, drifting along the Mesoamerican Barrier Reef surrounded by vibrant coral, dramatic walls, and marine life on almost every dive. Conditions are ideal year-round, the dives are effortless, and every site offers something unique — making each dive truly unforgettable.'
+      title: 'Why Choose Cozumel',
+      description: 'Because here you dive in crystal-clear water with visibility that often feels endless. You\'re exploring part of the Mesoamerican Barrier Reef, surrounded by dramatic walls, vibrant coral formations, and marine life that appears on almost every dive. Conditions are ideal year-round, drift diving is effortless, and every site offers something different — from calm shallows to iconic walls that drop into the deep blue. It\'s the kind of place where even a single dive feels unforgettable.'
     },
     // Gallery
     gallery: {
@@ -353,7 +352,6 @@ export const translations = {
         experience: 'Inmersiones de Experiencia',
         specialty: 'Inmersiones Especializadas'
       },
-      medicalFormReq: 'Todos los participantes deben completar un formulario médico estándar antes de bucear. Por favor revísalo <LINK>aquí</LINK> para confirmar que estás apto para la actividad.',
       openWater: {
         title: 'Open Water Diver',
         shortDescription: 'Aprende a bucear y convértete en un buceador certificado.',
@@ -554,8 +552,8 @@ export const translations = {
     },
     // Why Cozumel
     whyCozumel: {
-      title: '¿ POR QUÉ ELEGIR COZUMEL ?',
-      description: 'Aquí buceas en aguas cristalinas con visibilidad infinita, dejándote llevar a lo largo del Arrecife Mesoamericano rodeado de corales vibrantes, paredes dramáticas y vida marina en casi cada inmersión. Las condiciones son ideales todo el año, los buceos son sin esfuerzo y cada sitio ofrece algo único — haciendo que cada inmersión sea verdaderamente inolvidable.'
+      title: 'Por Qué Elegir Cozumel',
+      description: 'Porque aquí buceas en agua cristalina con una visibilidad que a menudo se siente infinita. Estás explorando parte del Arrecife Mesoamericano, rodeado de paredes dramáticas, formaciones de coral vibrantes y vida marina que aparece en casi cada inmersión. Las condiciones son ideales todo el año, el buceo a la deriva es sin esfuerzo, y cada sitio ofrece algo diferente — desde bajíos tranquilos hasta paredes icónicas que caen en el azul profundo. Es el tipo de lugar donde incluso una sola inmersión se siente inolvidable.'
     },
     // Gallery
     gallery: {

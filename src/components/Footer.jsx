@@ -49,7 +49,7 @@ const Footer = () => {
               rel="noopener noreferrer"
               className="developer-link"
             >
-              Michael Garzon +57 304 326 1092
+              Michael Garzón +57 304 326 1092
             </a>
           </p>
         </div>
