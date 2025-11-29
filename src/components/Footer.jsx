@@ -8,15 +8,6 @@ const Footer = () => {
       <div className="container">
         <div className="footer-grid">
           <div className="footer-column">
-            <h3>CONTACT ME</h3>
-            <p>Sign up to our newsletter to receive exclusive offers.</p>
-            <form className="footer-form">
-              <input type="email" placeholder="Email" required />
-              <button type="submit">SUBSCRIBE</button>
-            </form>
-          </div>
-
-          <div className="footer-column">
             <h3>MENU</h3>
             <ul>
               <li><a href="#search">Search</a></li>
@@ -49,7 +40,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-bottom">
-          <p>© 2025 - JUAN DIVING</p>
+          <p>© 2025 - SOCIAL DIVING CLUB</p>
           <p>
             Developed By:{' '}
             <a 

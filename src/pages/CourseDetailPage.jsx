@@ -93,7 +93,7 @@ const CourseDetailPage = () => {
           <div className="course-detail-content">
             <div className="container">
               <div className="course-detail-grid">
-                
+
                 {/* Main Content */}
                 <div className="course-detail-main-content">
                   {course.detailedDescription && (
@@ -127,6 +127,29 @@ const CourseDetailPage = () => {
                             {req}
                           </li>
                         ))}
+                        {t.medicalFormReq && (
+                          <li>
+                            <span className="list-icon">•</span>
+                            <span>
+                              {t.medicalFormReq.split(/<LINK>(.*?)<\/LINK>/).map((part, i) => {
+                                if (i % 2 === 1) {
+                                  return (
+                                    <a
+                                      key={i}
+                                      href={`${baseUrl}medical form.pdf`}
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      style={{ color: 'var(--primary-color)', textDecoration: 'underline', fontWeight: 'bold' }}
+                                    >
+                                      {part}
+                                    </a>
+                                  );
+                                }
+                                return part;
+                              })}
+                            </span>
+                          </li>
+                        )}
                       </ul>
                     </section>
                   )}
@@ -155,22 +178,22 @@ const CourseDetailPage = () => {
                         <p>{language === 'en' ? 'per person' : 'por persona'}</p>
                       </div>
                     )}
-                    
+
                     {course.duration && (
                       <div className="booking-info">
                         <h3>{language === 'en' ? 'Duration' : 'Duración'}</h3>
                         <p>{course.duration}</p>
                       </div>
                     )}
-                    
+
                     <button className="booking-btn" onClick={handleBookNow}>
                       {t.bookNow}
                     </button>
 
                     <div className="booking-note">
                       <p>
-                        {language === 'en' 
-                          ? 'Contact us via WhatsApp to confirm availability' 
+                        {language === 'en'
+                          ? 'Contact us via WhatsApp to confirm availability'
                           : 'Contáctanos por WhatsApp para confirmar disponibilidad'}
                       </p>
                     </div>

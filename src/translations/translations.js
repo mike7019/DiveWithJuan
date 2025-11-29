@@ -57,10 +57,12 @@ export const translations = {
         experience: 'Experience Dives',
         specialty: 'Specialty Dives'
       },
+      medicalFormReq: 'All participants must complete a standard medical form before diving. Please review it <LINK>here</LINK> to confirm you’re fully fit for the activity.',
       openWater: {
         title: 'Open Water Scuba Diver Course',
         shortDescription: 'Learn to dive and become a certified diver.',
         description: 'The Open Water Diver course teaches you the fundamentals of scuba diving, essential skills, and includes your first ocean dives',
+        flipButtonText: 'Learn to dive',
         detailedDescription: 'The Open Water course is a three-day experience designed to give you the confidence, skills, and freedom to dive anywhere in the world. Throughout the course, we include all equipment, transportation, daily meals, and everything you need to feel comfortable and supported from start to finish. The schedule may vary slightly, but in general each day runs between 6 and 8 hours, keeping the experience focused yet unhurried. A personalized, fully guided path to becoming a certified diver — safe, calm, and unforgettable.',
         duration: '3 days + online theory at your own pace',
         price: '$500 USD',
@@ -90,6 +92,7 @@ export const translations = {
         title: 'Advanced Adventure Course',
         shortDescription: 'Take your diving to the next level.',
         description: 'The Advanced Open Water Diver course helps you build confidence, improve your skills, and explore deeper, more exciting environments',
+        flipButtonText: 'Next level',
         detailedDescription: 'Take your diving to the next level with a two-day experience designed for curious, confident explorers. You\'ll strengthen your skills, dive deeper, and enjoy a selection of specialty adventure dives that match your style and interests. With personal guidance and a smooth, comfortable pace, this course helps you explore more of the ocean with confidence, ease, and a sense of true adventure.',
         duration: '2–3 days + self-paced online study',
         price: '$450 USD',
@@ -118,6 +121,7 @@ export const translations = {
         title: 'Rescue Course',
         shortDescription: 'Become a confident rescuer and help others.',
         description: 'Learn to prevent and manage problems in the water. Become more confident in your skills as a diver, knowing that you can help others if needed.',
+        flipButtonText: 'Click Me',
         detailedDescription: 'A challenging and rewarding training that elevates your confidence, sharpens your awareness, and teaches you how to handle real-world diving emergencies with calm and control. Ask for more info',
         duration: 'Ask for more info',
         price: 'Ask for more info',
@@ -146,6 +150,7 @@ export const translations = {
         title: 'Refresher Course',
         shortDescription: 'Review your skills and dive with confidence again.',
         description: 'Haven\'t dived in a while? A refresher course helps you review essential skills and rebuild your confidence in a relaxed, supportive environment.',
+        flipButtonText: 'Click Me',
         detailedDescription: 'A smooth, stress-free session designed to rebuild your comfort underwater, review essential skills, and get you dive-ready again with total confidence. Ask for more info',
         duration: 'Ask for more info',
         price: 'Ask for more info',
@@ -185,6 +190,7 @@ export const translations = {
         title: 'Discover Scuba Diving',
         shortDescription: 'Your first step into the underwater world.',
         description: 'Learn a few simple skills and enjoy a guided ocean dive in a safe, fun, and relaxed way. No certification required — just curiosity and the desire to explore.',
+        flipButtonText: 'Try it now',
         detailedDescription: 'Discover scuba diving with a relaxed, personalized experience designed for first-time divers. You\'ll start with a short briefing and practice a few basic underwater skills at your own pace. After that, enjoy two guided dives—either from shore or by boat, depending on what you prefer—exploring Cozumel\'s vibrant marine life. The full experience takes approximately 6 to 8 hours, giving you plenty of time to learn, enjoy, and feel fully confident in the water.',
         duration: 'Half-day (6-8 hours)',
         price: '$180 USD',
@@ -213,6 +219,7 @@ export const translations = {
         title: 'Fun Dives',
         shortDescription: 'Private, relaxed dives for certified divers.',
         description: 'High-quality dives for certified divers seeking an underwater experience. Explore Cozumel\'s stunning reefs with personalized attention and expert guidance.',
+        flipButtonText: 'Let\'s dive',
         detailedDescription: 'Enjoy two guided dives exploring Cozumel\'s vibrant reefs, drifting along stunning walls, and experiencing the island\'s world-class visibility. Perfect for certified divers looking for a relaxed, unforgettable underwater adventure.',
         duration: 'Half-day',
         price: '$150 USD',
@@ -257,8 +264,8 @@ export const translations = {
     },
     // Why Cozumel
     whyCozumel: {
-      title: 'Why Choose Cozumel',
-      description: 'Because here you dive in crystal-clear water with visibility that often feels endless. You\'re exploring part of the Mesoamerican Barrier Reef, surrounded by dramatic walls, vibrant coral formations, and marine life that appears on almost every dive. Conditions are ideal year-round, drift diving is effortless, and every site offers something different — from calm shallows to iconic walls that drop into the deep blue. It\'s the kind of place where even a single dive feels unforgettable.'
+      title: 'WHY CHOOSE COZUMEL ?',
+      description: 'Here you dive in crystal-clear water with endless visibility, drifting along the Mesoamerican Barrier Reef surrounded by vibrant coral, dramatic walls, and marine life on almost every dive. Conditions are ideal year-round, the dives are effortless, and every site offers something unique — making each dive truly unforgettable.'
     },
     // Gallery
     gallery: {
@@ -346,9 +353,12 @@ export const translations = {
         experience: 'Inmersiones de Experiencia',
         specialty: 'Inmersiones Especializadas'
       },
+      medicalFormReq: 'Todos los participantes deben completar un formulario médico estándar antes de bucear. Por favor revísalo <LINK>aquí</LINK> para confirmar que estás apto para la actividad.',
       openWater: {
         title: 'Open Water Diver',
+        shortDescription: 'Aprende a bucear y convértete en un buceador certificado.',
         description: '¡Obtén tu certificación PADI! Aprende habilidades y técnicas esenciales de buceo para convertirte en un buceador certificado. Explora el mundo submarino con confianza y seguridad.',
+        flipButtonText: 'Aprende a bucear',
         detailedDescription: 'El curso PADI Open Water Diver es la certificación de buceo más popular del mundo. Este programa integral combina aprendizaje académico, entrenamiento en agua confinada e inmersiones en aguas abiertas para darte las habilidades y confianza necesarias para bucear de manera independiente con un compañero en cualquier parte del mundo.',
         duration: '3-4 días',
         requirements: [
@@ -375,7 +385,9 @@ export const translations = {
       },
       advancedOpenWater: {
         title: 'Advanced Open Water',
+        shortDescription: 'Lleva tus habilidades al siguiente nivel.',
         description: '¡Lleva tus habilidades al siguiente nivel! Amplía tu conocimiento de buceo con inmersiones especializadas que incluyen buceo profundo, navegación y técnicas más avanzadas.',
+        flipButtonText: 'Siguiente nivel',
         detailedDescription: 'El curso PADI Advanced Open Water Diver te ayuda a aumentar tu confianza y desarrollar tus habilidades de buceo para que te sientas más cómodo en el agua. Esta es una excelente manera de acumular más inmersiones mientras continúas aprendiendo bajo la supervisión de tu instructor PADI.',
         duration: '2-3 días',
         requirements: [
@@ -402,7 +414,9 @@ export const translations = {
       },
       rescueDiver: {
         title: 'Rescue Scuba Diver',
+        shortDescription: 'Convértete en un rescatista seguro y ayuda a otros.',
         description: '¡Conviértete en un rescatista seguro! Aprende a prevenir y manejar problemas en el agua, y gana más confianza en tus habilidades como buceador, sabiendo que puedes ayudar a otros si es necesario.',
+        flipButtonText: 'Aprende rescate',
         detailedDescription: 'El curso PADI Rescue Diver te preparará para prevenir y manejar problemas, y mejorar tu confianza como buceador. Este curso desafiante pero gratificante amplía enormemente tu nivel de conocimiento y experiencia.',
         duration: '3-4 días',
         requirements: [
@@ -427,13 +441,44 @@ export const translations = {
           'Conviértete en un buceador más confiado'
         ]
       },
+      refresherCourse: {
+        title: 'Refresher Course',
+        shortDescription: 'Repasa tus habilidades y bucea con confianza nuevamente.',
+        description: '¿No has buceado en un tiempo? Un curso de repaso te ayuda a revisar habilidades esenciales y recuperar tu confianza en un ambiente relajado y de apoyo.',
+        flipButtonText: 'Refresca habilidades',
+        detailedDescription: 'Una sesión suave y sin estrés diseñada para recuperar tu comodidad bajo el agua, repasar habilidades esenciales y prepararte para bucear nuevamente con total confianza. Pide más información',
+        duration: 'Pide más información',
+        price: 'Pide más información',
+        requirements: [
+          'Certificación de buceo válida de cualquier agencia',
+          'Sin límite de tiempo desde la última inmersión',
+          'Habilidades básicas de natación',
+          'Buena salud física'
+        ],
+        includes: [
+          'Sesión de revisión de conocimientos',
+          'Práctica de habilidades en agua confinada',
+          'Una o dos inmersiones en aguas abiertas',
+          'Todo el equipo requerido',
+          'Coaching personal y guía',
+          'Tarjeta de finalización del curso de repaso'
+        ],
+        highlights: [
+          'Repasa teoría de buceo y seguridad',
+          'Practica habilidades esenciales',
+          'Recupera confianza bajo el agua',
+          'Ritmo y atención personalizados'
+        ]
+      },
       snorkeling: {
         title: 'Snorkeling',
         description: 'Explora las aguas superficiales y arrecifes de coral con solo una máscara y snorkel. Perfecto para todas las edades y niveles de habilidad. Descubre la belleza de los arrecifes poco profundos de Cozumel.'
       },
       discovery: {
         title: 'Discover Scuba Diving',
+        shortDescription: 'Tu primer paso al mundo submarino.',
         description: '¡Perfecto para principiantes! Experimenta la magia del buceo por primera vez con nuestros instructores profesionales guiándote en cada paso en las aguas cristalinas de Cozumel.',
+        flipButtonText: 'Pruébalo ahora',
         detailedDescription: 'Discover Scuba Diving es una introducción rápida y fácil a lo que se necesita para explorar el mundo submarino. Esta experiencia te da la oportunidad de probar el buceo por primera vez en una piscina y luego en el océano bajo la supervisión directa de un profesional PADI.',
         duration: 'Medio día (3-4 horas)',
         requirements: [
@@ -461,7 +506,9 @@ export const translations = {
       },
       funDive: {
         title: 'Fun Dive',
+        shortDescription: 'Inmersiones privadas y relajadas para buceadores certificados.',
         description: '¡Solo bucea y disfruta! Explora los impresionantes arrecifes de Cozumel con nuestras inmersiones guiadas. Perfecto para buceadores certificados que quieren experimentar los mejores sitios de buceo en el área.',
+        flipButtonText: 'Vamos a bucear',
         detailedDescription: 'Únete a nosotros para inmersiones recreativas guiadas para explorar los arrecifes mundialmente famosos de Cozumel. Como buceador certificado, tendrás la oportunidad de bucear en algunos de los mejores sitios del Caribe, conocidos por sus aguas cristalinas, formaciones de coral vibrantes y abundante vida marina.',
         duration: 'Opciones de medio día a día completo',
         requirements: [
@@ -507,8 +554,8 @@ export const translations = {
     },
     // Why Cozumel
     whyCozumel: {
-      title: 'Por Qué Elegir Cozumel',
-      description: 'Porque aquí buceas en agua cristalina con una visibilidad que a menudo se siente infinita. Estás explorando parte del Arrecife Mesoamericano, rodeado de paredes dramáticas, formaciones de coral vibrantes y vida marina que aparece en casi cada inmersión. Las condiciones son ideales todo el año, el buceo a la deriva es sin esfuerzo, y cada sitio ofrece algo diferente — desde bajíos tranquilos hasta paredes icónicas que caen en el azul profundo. Es el tipo de lugar donde incluso una sola inmersión se siente inolvidable.'
+      title: '¿ POR QUÉ ELEGIR COZUMEL ?',
+      description: 'Aquí buceas en aguas cristalinas con visibilidad infinita, dejándote llevar a lo largo del Arrecife Mesoamericano rodeado de corales vibrantes, paredes dramáticas y vida marina en casi cada inmersión. Las condiciones son ideales todo el año, los buceos son sin esfuerzo y cada sitio ofrece algo único — haciendo que cada inmersión sea verdaderamente inolvidable.'
     },
     // Gallery
     gallery: {

@@ -19,6 +19,7 @@ const Courses = () => {
       shortDescription: t.discovery.shortDescription,
       description: t.discovery.description,
       detailedDescription: t.discovery.detailedDescription,
+      flipButtonText: t.discovery.flipButtonText,
       slug: 'discovery'
     },
     {
@@ -28,6 +29,7 @@ const Courses = () => {
       shortDescription: t.openWater.shortDescription,
       description: t.openWater.description,
       detailedDescription: t.openWater.detailedDescription,
+      flipButtonText: t.openWater.flipButtonText,
       slug: 'open-water'
     },
     {
@@ -37,6 +39,7 @@ const Courses = () => {
       shortDescription: t.advancedOpenWater.shortDescription,
       description: t.advancedOpenWater.description,
       detailedDescription: t.advancedOpenWater.detailedDescription,
+      flipButtonText: t.advancedOpenWater.flipButtonText,
       slug: 'advanced'
     },
     {
@@ -46,6 +49,7 @@ const Courses = () => {
       shortDescription: t.funDive.shortDescription,
       description: t.funDive.description,
       detailedDescription: t.funDive.detailedDescription,
+      flipButtonText: t.funDive.flipButtonText,
       slug: 'fun-dive'
     },
     {
@@ -55,6 +59,7 @@ const Courses = () => {
       shortDescription: t.rescueDiver.shortDescription,
       description: t.rescueDiver.description,
       detailedDescription: t.rescueDiver.detailedDescription,
+      flipButtonText: t.rescueDiver.flipButtonText,
       slug: 'rescue'
     },
     {
@@ -64,6 +69,7 @@ const Courses = () => {
       shortDescription: t.refresherCourse.shortDescription,
       description: t.refresherCourse.description,
       detailedDescription: t.refresherCourse.detailedDescription,
+      flipButtonText: t.refresherCourse.flipButtonText,
       slug: 'refresher'
     }
   ];
@@ -107,7 +113,7 @@ const Courses = () => {
                     <h3 className="course-title">{course.title}</h3>
                     <p className="course-brief">{course.shortDescription}</p>
                     <button className="flip-hint-btn">
-                      {language === 'en' ? 'Click Me' : 'Click Aquí'}
+                      {course.flipButtonText}
                     </button>
                   </div>
                 </div>
