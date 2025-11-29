@@ -15,7 +15,7 @@ const About = () => {
           <div className="about-image">
             <img 
               src={`${baseUrl}about me.jpg`} 
-              alt="Juan Rodriguez - Professional PADI Scuba Diving Instructor in Cozumel, Mexico" 
+              alt="Juan De San Benito - Professional PADI Scuba Diving Instructor in Cozumel, Mexico" 
               loading="lazy"
             />
           </div>

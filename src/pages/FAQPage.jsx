@@ -43,10 +43,6 @@ const FAQPage = () => {
       answer: 'You can fly directly to Cozumel International Airport or arrive via ferry from Playa del Carmen (runs every day, every 30 minutes)'
     },
     {
-      question: 'What should I bring for the trip?',
-      answer: 'Swimsuit, towel, reef-safe sunscreen, and your certification card if you\'re certified.'
-    },
-    {
       question: 'Do you offer hotel pick-ups?',
       answer: 'No, we don\'t offer pick-ups. We meet directly at the marina at the scheduled time.'
     },
