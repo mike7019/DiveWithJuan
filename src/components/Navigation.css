@@ -47,7 +47,7 @@
 }
 
 .logo-image {
-  height: 50px;
+  height: 90px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -55,6 +55,7 @@
 }
 
 .navigation.scrolled .logo-image {
+  height: 90px;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1);
 }
 
@@ -151,5 +152,109 @@
 
   .nav-links.active {
     left: 0;
+  }
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--white);
+  min-width: 280px;
+  padding: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  margin-top: 15px;
+  z-index: 1001;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-submenu {
+  padding: 15px 25px;
+  border-bottom: 1px solid rgba(0, 123, 255, 0.1);
+}
+
+.dropdown-submenu:last-child {
+  border-bottom: none;
+}
+
+.submenu-title {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.submenu-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.submenu-items li {
+  margin: 0;
+}
+
+.submenu-items li a {
+  display: block;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  color: var(--text-color);
+  text-shadow: none !important;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+}
+
+.submenu-items li a:hover {
+  background: rgba(0, 123, 255, 0.1);
+  color: var(--primary-color);
+  padding-left: 16px;
+}
+
+.submenu-items li a::after {
+  display: none;
+}
+
+/* Mobile Dropdown */
+@media (max-width: 968px) {
+  .dropdown-menu {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    margin-top: 10px;
+    padding: 10px 0 10px 20px;
+    background: rgba(0, 123, 255, 0.05);
+    border-radius: 4px;
+  }
+
+  .dropdown-submenu {
+    padding: 10px 15px;
+  }
+
+  .submenu-items li a {
+    font-size: 14px;
+    padding: 6px 10px;
   }
 }

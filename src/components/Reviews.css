@@ -1,7 +1,5 @@
 .contact {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: linear-gradient(135deg, #e0f2f7 0%, #b3e0f2 50%, #81d4f7 100%);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);

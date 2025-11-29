@@ -1,7 +1,5 @@
 .gallery {
-  background: rgba(249, 249, 249, 0.7);
-  backdrop-filter: blur(20px) saturate(180%);
-  -webkit-backdrop-filter: blur(20px) saturate(180%);
+  background: linear-gradient(135deg, #e8f4f8 0%, #d4e9f7 50%, #b3d9f2 100%);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);

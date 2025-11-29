@@ -4,6 +4,7 @@ import { LanguageProvider } from './context/LanguageContext.jsx';
 import Navigation from './components/Navigation';
 import Hero from './components/Hero';
 import About from './components/About';
+import WhyCozumel from './components/WhyCozumel';
 import Courses from './components/Courses';
 import Features from './components/Features';
 import Gallery from './components/Gallery';
@@ -15,15 +16,8 @@ import FAQPage from './pages/FAQPage';
 import './App.css';
 
 function HomePage() {
-  const baseUrl = import.meta.env.BASE_URL;
-  
   return (
     <>
-      <div className="video-background" aria-hidden="true">
-        <video autoPlay loop muted playsInline aria-label="Background video of diving in Cozumel">
-          <source src={`${baseUrl}videos/juan-hero.mp4`} type="video/mp4" />
-        </video>
-      </div>
       <div className="App">
         <header>
           <Navigation />
@@ -32,7 +26,8 @@ function HomePage() {
           <Hero />
           <Features />
           <Courses />
-          <About />       
+          <About />
+          <WhyCozumel />
           <Gallery />
           <Reviews />
         </main>

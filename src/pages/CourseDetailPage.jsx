@@ -19,19 +19,27 @@ const CourseDetailPage = () => {
   const courseMap = {
     'open-water': {
       key: 'openWater',
-      image: `${baseUrl}images-courses/open water diver.jpg`
+      image: `${baseUrl}images-courses/FOTO PARA OPEN WATER.jpg`
     },
     'advanced': {
       key: 'advancedOpenWater',
-      image: `${baseUrl}images-courses/advanced open water.jpg`
+      image: `${baseUrl}images-courses/FOTO PARA AVANZADO.jpg`
     },
     'discovery': {
       key: 'discovery',
-      image: `${baseUrl}images-courses/fun dive.jpg`
+      image: `${baseUrl}images-courses/FOTO PARA DSD.jpg`
     },
     'fun-dive': {
       key: 'funDive',
-      image: `${baseUrl}images-courses/fun diver.jpg`
+      image: `${baseUrl}images-courses/FOTO PARA FUNDIVE.jpg`
+    },
+    'rescue': {
+      key: 'rescueDiver',
+      image: `${baseUrl}images-courses/rescue diver.jpg`
+    },
+    'refresher': {
+      key: 'refresherCourse',
+      image: `${baseUrl}images-courses/reef cave diver.jpg`
     }
   };
 
@@ -66,11 +74,6 @@ const CourseDetailPage = () => {
 
   return (
     <>
-      <div className="video-background" aria-hidden="true">
-        <video autoPlay loop muted playsInline aria-label="Background video of diving in Cozumel">
-          <source src={`${baseUrl}videos/juan-hero.mp4`} type="video/mp4" />
-        </video>
-      </div>
       <div className="course-detail-page">
         <header>
           <Navigation />

@@ -39,6 +39,10 @@ const FAQPage = () => {
       answer: 'Warm year-round: about 24–26°C (76–78°F) in winter and 28–30°C (82–86°F) in summer.'
     },
     {
+      question: 'How do I get to Cozumel?',
+      answer: 'You can fly directly to Cozumel International Airport or arrive via ferry from Playa del Carmen (runs every day, every 30 minutes)'
+    },
+    {
       question: 'What should I bring for the trip?',
       answer: 'Swimsuit, towel, reef-safe sunscreen, and your certification card if you\'re certified.'
     },

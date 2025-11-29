@@ -1,5 +1,8 @@
 .features {
-  background: linear-gradient(135deg, rgba(0, 123, 255, 0.95) 0%, rgba(0, 86, 179, 0.95) 100%);
+  background-image: url('/images-courses/fondo para discover mesoamerican reef.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: scroll;
   position: relative;
   overflow: hidden;
 }
@@ -11,11 +14,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"><path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" fill="%23ffffff"/></svg>');
-  background-size: cover;
-  background-position: bottom;
-  opacity: 0.1;
+  background: rgba(0, 0, 0, 0.5);
   pointer-events: none;
+  z-index: 1;
 }
 
 .features-main-title {
@@ -28,7 +29,7 @@
   letter-spacing: 2px;
   text-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .features-grid {
@@ -36,7 +37,7 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .feature-item {

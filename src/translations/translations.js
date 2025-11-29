@@ -3,11 +3,22 @@ export const translations = {
     // Navigation
     nav: {
       home: 'Home',
-      courses: 'Courses',
+      services: 'Services',
       about: 'About',
       gallery: 'Gallery',
       contact: 'Contact',
-      faqs: 'FAQs'
+      faqs: 'FAQs',
+      diveCourses: 'Dive Courses',
+      recreationalDiving: 'Recreational Diving',
+      snorkeling: 'Snorkeling',
+      dsd: 'DSD',
+      openWater: 'Open Water',
+      advancedCourse: 'Advanced Course',
+      rescue: 'Rescue',
+      refresherCourse: 'Refresher Course',
+      funDive: 'Fun Dive',
+      divePackages: 'Dive Packages',
+      snorkelTrips: 'Snorkel Trips'
     },
     // Hero
     hero: {
@@ -49,7 +60,7 @@ export const translations = {
       openWater: {
         title: 'Open Water Scuba Diver Course',
         shortDescription: 'Learn to dive and become a certified diver.',
-        description: 'Learn to dive and become a certified diver. The Open Water Diver course teaches you the fundamentals of scuba diving, essential skills, and includes your first ocean dives',
+        description: 'The Open Water Diver course teaches you the fundamentals of scuba diving, essential skills, and includes your first ocean dives',
         detailedDescription: 'The Open Water course is a three-day experience designed to give you the confidence, skills, and freedom to dive anywhere in the world. Throughout the course, we include all equipment, transportation, daily meals, and everything you need to feel comfortable and supported from start to finish. The schedule may vary slightly, but in general each day runs between 6 and 8 hours, keeping the experience focused yet unhurried. A personalized, fully guided path to becoming a certified diver — safe, calm, and unforgettable.',
         duration: '3 days + online theory at your own pace',
         price: '$500 USD',
@@ -78,7 +89,7 @@ export const translations = {
       advancedOpenWater: {
         title: 'Advanced Adventure Course',
         shortDescription: 'Take your diving to the next level.',
-        description: 'Take your diving to the next level. The Advanced Open Water Diver course helps you build confidence, improve your skills, and explore deeper, more exciting environments',
+        description: 'The Advanced Open Water Diver course helps you build confidence, improve your skills, and explore deeper, more exciting environments',
         detailedDescription: 'Take your diving to the next level with a two-day experience designed for curious, confident explorers. You\'ll strengthen your skills, dive deeper, and enjoy a selection of specialty adventure dives that match your style and interests. With personal guidance and a smooth, comfortable pace, this course helps you explore more of the ocean with confidence, ease, and a sense of true adventure.',
         duration: '2–3 days + self-paced online study',
         price: '$450 USD',
@@ -104,10 +115,12 @@ export const translations = {
         ]
       },
       rescueDiver: {
-        title: 'Rescue Scuba Diver Course',
-        description: 'Become a confident rescuer! Learn to prevent and manage problems in the water, and become more confident in your skills as a diver, knowing that you can help others if needed.',
-        detailedDescription: 'The PADI Rescue Diver course will prepare you to prevent and manage problems, and improve your confidence as a diver. This challenging yet rewarding course greatly expands your knowledge and experience level.',
-        duration: '3-4 days',
+        title: 'Rescue Course',
+        shortDescription: 'Become a confident rescuer and help others.',
+        description: 'Learn to prevent and manage problems in the water. Become more confident in your skills as a diver, knowing that you can help others if needed.',
+        detailedDescription: 'A challenging and rewarding training that elevates your confidence, sharpens your awareness, and teaches you how to handle real-world diving emergencies with calm and control. Ask for more info',
+        duration: 'Ask for more info',
+        price: 'Ask for more info',
         requirements: [
           'PADI Advanced Open Water Diver (or equivalent)',
           'Emergency First Response certification (or equivalent)',
@@ -126,18 +139,52 @@ export const translations = {
           'Learn self-rescue techniques',
           'Recognize and manage stress in divers',
           'Emergency response procedures',
-          'Rescue skills practice',
           'Become a more confident diver'
         ]
       },
+      refresherCourse: {
+        title: 'Refresher Course',
+        shortDescription: 'Review your skills and dive with confidence again.',
+        description: 'Haven\'t dived in a while? A refresher course helps you review essential skills and rebuild your confidence in a relaxed, supportive environment.',
+        detailedDescription: 'A smooth, stress-free session designed to rebuild your comfort underwater, review essential skills, and get you dive-ready again with total confidence. Ask for more info',
+        duration: 'Ask for more info',
+        price: 'Ask for more info',
+        requirements: [
+          'Valid diving certification from any agency',
+          'No minimum time since last dive',
+          'Basic swimming skills',
+          'Good physical health'
+        ],
+        includes: [
+          'Knowledge review session',
+          'Confined water skills practice',
+          'One or two open water dives',
+          'All required equipment',
+          'Personal coaching and guidance',
+          'Refresher completion card'
+        ],
+        highlights: [
+          'Review dive theory and safety',
+          'Practice essential skills',
+          'Rebuild confidence underwater',
+          'Personalized pace and attention'
+        ]
+      },
       snorkeling: {
-        title: 'Snorkeling Diving',
-        description: 'Explore the surface waters and coral reefs with just a mask and snorkel. Perfect for all ages and skill levels. Discover the beauty of Cozumel\'s shallow reefs.'
+        title: 'Snorkel Tour',
+        shortDescription: 'Want to see starfish?',
+        description: 'Go snorkeling in Cozumel and drift over crystal-clear reefs and incredible marine life in a smooth, effortless experience — we take care of everything; you just enjoy.',
+        detailedDescription: 'Go snorkeling in Cozumel and drift over crystal-clear reefs and incredible marine life in a smooth, effortless experience — we take care of everything; you just enjoy.',
+        duration: 'Ask for more info',
+        price: 'Ask for more info',
+        requirements: [],
+        includes: [],
+        highlights: []
       },
       discovery: {
         title: 'Discover Scuba Diving',
         shortDescription: 'Your first step into the underwater world.',
-        description: 'Your first step into the underwater world. Learn a few simple skills and enjoy a guided ocean dive in a safe, fun, and relaxed way. No certification required — just curiosity and the desire to explore.',
+        description: 'Learn a few simple skills and enjoy a guided ocean dive in a safe, fun, and relaxed way. No certification required — just curiosity and the desire to explore.',
         detailedDescription: 'Discover scuba diving with a relaxed, personalized experience designed for first-time divers. You\'ll start with a short briefing and practice a few basic underwater skills at your own pace. After that, enjoy two guided dives—either from shore or by boat, depending on what you prefer—exploring Cozumel\'s vibrant marine life. The full experience takes approximately 6 to 8 hours, giving you plenty of time to learn, enjoy, and feel fully confident in the water.',
         duration: 'Half-day (6-8 hours)',
         price: '$180 USD',
@@ -165,7 +212,7 @@ export const translations = {
       funDive: {
         title: 'Fun Dives',
         shortDescription: 'Private, relaxed dives for certified divers.',
-        description: 'Private, relaxed, high-quality dives for certified divers seeking an underwater experience. Explore Cozumel\'s stunning reefs with personalized attention and expert guidance.',
+        description: 'High-quality dives for certified divers seeking an underwater experience. Explore Cozumel\'s stunning reefs with personalized attention and expert guidance.',
         detailedDescription: 'Enjoy two guided dives exploring Cozumel\'s vibrant reefs, drifting along stunning walls, and experiencing the island\'s world-class visibility. Perfect for certified divers looking for a relaxed, unforgettable underwater adventure.',
         duration: 'Half-day',
         price: '$150 USD',
@@ -208,6 +255,11 @@ export const translations = {
       title: 'About Juan',
       description: 'Hi! I\'m Juan, a PADI and SSI Dive Instructor originally from Argentina. I moved to Mexico five years ago and made Cozumel my home, a place where I can live close to the ocean and share what I love most. I\'ve been diving for over six years, and my passion is to share my love for the sea and create unique, memorable underwater experiences. At Social Diving Club, we do Fun Dives, Discover Scuba Diving (DSD), Scuba Courses, and Private Diving — always focusing on comfort, safety, and a relaxed, personal experience. And when you dive with me, we take care of absolutely everything, so you can simply enjoy the ocean, breathe, and experience the moment. Let\'s dive and create something unforgettable together.'
     },
+    // Why Cozumel
+    whyCozumel: {
+      title: 'Why Choose Cozumel',
+      description: 'Because here you dive in crystal-clear water with visibility that often feels endless. You\'re exploring part of the Mesoamerican Barrier Reef, surrounded by dramatic walls, vibrant coral formations, and marine life that appears on almost every dive. Conditions are ideal year-round, drift diving is effortless, and every site offers something different — from calm shallows to iconic walls that drop into the deep blue. It\'s the kind of place where even a single dive feels unforgettable.'
+    },
     // Gallery
     gallery: {
       title: 'Made by us, Shared by you',
@@ -240,11 +292,22 @@ export const translations = {
     // Navigation
     nav: {
       home: 'Inicio',
-      courses: 'Cursos',
+      services: 'Servicios',
       about: 'Acerca de',
       gallery: 'Galería',
       contact: 'Contacto',
-      faqs: 'Preguntas Frecuentes'
+      faqs: 'Preguntas Frecuentes',
+      diveCourses: 'Cursos de Buceo',
+      recreationalDiving: 'Buceo Recreativo',
+      snorkeling: 'Snorkel',
+      dsd: 'DSD',
+      openWater: 'Open Water',
+      advancedCourse: 'Curso Avanzado',
+      rescue: 'Rescate',
+      refresherCourse: 'Curso de Repaso',
+      funDive: 'Fun Dive',
+      divePackages: 'Paquetes de Buceo',
+      snorkelTrips: 'Viajes de Snorkel'
     },
     // Hero
     hero: {
@@ -441,6 +504,11 @@ export const translations = {
     about: {
       title: 'Sobre mí',
       description: '¡Hola! Soy Juan, Instructor de Buceo PADI y SSI, originalmente de Argentina. Me mudé a México hace cinco años y hice de Cozumel mi hogar, un lugar que me permite vivir cerca del océano y compartir lo que más amo. Llevo más de seis años buceando, y mi pasión es transmitir mi amor por el mar y crear experiencias únicas e inolvidables. En Social Diving Club, hacemos fun dives, Discover Scuba Diving (DSD), cursos de buceo y buceo privado, siempre enfocados en la comodidad, la seguridad y una experiencia relajada y personalizada. Y cuando buceás conmigo, nos encargamos absolutamente de todo, para que tu solo disfrutes del océano, respires y vivas el momento. Creemos juntos una experiencia memorable.'
+    },
+    // Why Cozumel
+    whyCozumel: {
+      title: 'Por Qué Elegir Cozumel',
+      description: 'Porque aquí buceas en agua cristalina con una visibilidad que a menudo se siente infinita. Estás explorando parte del Arrecife Mesoamericano, rodeado de paredes dramáticas, formaciones de coral vibrantes y vida marina que aparece en casi cada inmersión. Las condiciones son ideales todo el año, el buceo a la deriva es sin esfuerzo, y cada sitio ofrece algo diferente — desde bajíos tranquilos hasta paredes icónicas que caen en el azul profundo. Es el tipo de lugar donde incluso una sola inmersión se siente inolvidable.'
     },
     // Gallery
     gallery: {
