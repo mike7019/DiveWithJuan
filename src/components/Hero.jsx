@@ -18,8 +18,19 @@ const Hero = () => {
 
   return (
     <section className="hero" id="home" aria-label="Welcome to Juan Diving Cozumel">
-      <div className="video-background" aria-hidden="true">
-        <video autoPlay loop muted playsInline aria-label="Background video of diving in Cozumel">
+      <div
+        className="video-background"
+        aria-hidden="true"
+        style={{ backgroundImage: `url(${baseUrl}images-gallery/pexels-harvey-clements-13141095-15288622.jpg)` }}
+      >
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          aria-label="Background video of diving in Cozumel"
+          poster={`${baseUrl}images-gallery/pexels-harvey-clements-13141095-15288622.jpg`}
+        >
           <source src={`${baseUrl}videos/juan-hero.mp4`} type="video/mp4" />
         </video>
       </div>
