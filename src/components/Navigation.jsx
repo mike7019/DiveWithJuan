@@ -21,12 +21,28 @@ const Navigation = () => {
       setIsScrolled(window.scrollY > 50);
     };
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleLinkClick = () => {
+    setMenuOpen(false);
+    // Don't close services immediately if we want to keep state, but usually we want to reset
+    // setServicesOpen(false); 
+  };
+
+  const toggleServices = (e) => {
+    e.preventDefault();
+    setServicesOpen(!servicesOpen);
+  };
 
   return (
     <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container nav-container">
+        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          <FaBars />
+        </button>
+
         <div className="logo">
           <a href="/">
             <img src={`${baseUrl}socialdivingclub.ico`} alt="Social Diving Club Logo" className="logo-image" />
@@ -34,89 +50,102 @@ const Navigation = () => {
           </a>
         </div>
 
-        <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
-          {menuOpen ? <FaTimes /> : <FaBars />}
-        </button>
-
         <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
+          <button className="menu-close" onClick={() => setMenuOpen(false)}>
+            <FaTimes />
+          </button>
           {isHomePage ? (
             <>
-              <li><a href="#home">{t.home}</a></li>
-              <li className="dropdown" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-                <a href="#courses">{t.services}</a>
+              <li><a href="#home" onClick={handleLinkClick}>{t.home}</a></li>
+              <li className="dropdown" onMouseEnter={() => window.innerWidth > 968 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 968 && setServicesOpen(false)}>
+                <a href="#courses" onClick={toggleServices} className="dropdown-toggle">
+                  {t.services}
+                  <span className={`arrow ${servicesOpen ? 'up' : 'down'}`}></span>
+                </a>
                 <ul className={`dropdown-menu ${servicesOpen ? 'show' : ''}`}>
                   <li className="dropdown-submenu">
                     <span className="submenu-title">{t.diveCourses}</span>
                     <ul className="submenu-items">
-                      <li><Link to="/course/discovery">{t.dsd}</Link></li>
-                      <li><Link to="/course/open-water">{t.openWater}</Link></li>
-                      <li><Link to="/course/advanced">{t.advancedCourse}</Link></li>
-                      <li><Link to="/course/rescue">{t.rescue}</Link></li>
-                      <li><Link to="/course/refresher">{t.refresherCourse}</Link></li>
+                      <li><Link to="/course/discovery" onClick={handleLinkClick}>{t.dsd}</Link></li>
+                      <li><Link to="/course/open-water" onClick={handleLinkClick}>{t.openWater}</Link></li>
+                      <li><Link to="/course/advanced" onClick={handleLinkClick}>{t.advancedCourse}</Link></li>
+                      <li><Link to="/course/rescue" onClick={handleLinkClick}>{t.rescue}</Link></li>
+                      <li><Link to="/course/refresher" onClick={handleLinkClick}>{t.refresherCourse}</Link></li>
                     </ul>
                   </li>
                   <li className="dropdown-submenu">
                     <span className="submenu-title">{t.recreationalDiving}</span>
                     <ul className="submenu-items">
-                      <li><Link to="/course/fun-dive">{t.funDive}</Link></li>
-                      <li><Link to="/course/dive-packages">{t.divePackages}</Link></li>
+                      <li><Link to="/course/fun-dive" onClick={handleLinkClick}>{t.funDive}</Link></li>
+                      <li><Link to="/course/dive-packages" onClick={handleLinkClick}>{t.divePackages}</Link></li>
                     </ul>
                   </li>
                   <li className="dropdown-submenu">
                     <span className="submenu-title">{t.snorkeling}</span>
                     <ul className="submenu-items">
-                      <li><Link to="/course/snorkel-trips">{t.snorkelTrips}</Link></li>
+                      <li><Link to="/course/snorkel-trips" onClick={handleLinkClick}>{t.snorkelTrips}</Link></li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li><a href="#about">{t.about}</a></li>
-              <li><a href="#gallery">{t.gallery}</a></li>
-              <li><a href="#contact">{t.contact}</a></li>
+              <li><a href="#about" onClick={handleLinkClick}>{t.about}</a></li>
+              <li><a href="#gallery" onClick={handleLinkClick}>{t.gallery}</a></li>
+              <li><a href="#contact" onClick={handleLinkClick}>{t.contact}</a></li>
             </>
           ) : (
             <>
-              <li><Link to="/">{t.home}</Link></li>
-              <li className="dropdown" onMouseEnter={() => setServicesOpen(true)} onMouseLeave={() => setServicesOpen(false)}>
-                <Link to="/#courses">{t.services}</Link>
+              <li><Link to="/" onClick={handleLinkClick}>{t.home}</Link></li>
+              <li className="dropdown" onMouseEnter={() => window.innerWidth > 968 && setServicesOpen(true)} onMouseLeave={() => window.innerWidth > 968 && setServicesOpen(false)}>
+                <Link to="/#courses" onClick={toggleServices} className="dropdown-toggle">
+                  {t.services}
+                  <span className={`arrow ${servicesOpen ? 'up' : 'down'}`}></span>
+                </Link>
                 <ul className={`dropdown-menu ${servicesOpen ? 'show' : ''}`}>
                   <li className="dropdown-submenu">
                     <span className="submenu-title">{t.diveCourses}</span>
                     <ul className="submenu-items">
-                      <li><Link to="/course/discovery">{t.dsd}</Link></li>
-                      <li><Link to="/course/open-water">{t.openWater}</Link></li>
-                      <li><Link to="/course/advanced">{t.advancedCourse}</Link></li>
-                      <li><Link to="/course/rescue">{t.rescue}</Link></li>
-                      <li><Link to="/course/refresher">{t.refresherCourse}</Link></li>
+                      <li><Link to="/course/discovery" onClick={handleLinkClick}>{t.dsd}</Link></li>
+                      <li><Link to="/course/open-water" onClick={handleLinkClick}>{t.openWater}</Link></li>
+                      <li><Link to="/course/advanced" onClick={handleLinkClick}>{t.advancedCourse}</Link></li>
+                      <li><Link to="/course/rescue" onClick={handleLinkClick}>{t.rescue}</Link></li>
+                      <li><Link to="/course/refresher" onClick={handleLinkClick}>{t.refresherCourse}</Link></li>
                     </ul>
                   </li>
                   <li className="dropdown-submenu">
                     <span className="submenu-title">{t.recreationalDiving}</span>
                     <ul className="submenu-items">
-                      <li><Link to="/course/fun-dive">{t.funDive}</Link></li>
-                      <li><Link to="/course/dive-packages">{t.divePackages}</Link></li>
+                      <li><Link to="/course/fun-dive" onClick={handleLinkClick}>{t.funDive}</Link></li>
+                      <li><Link to="/course/dive-packages" onClick={handleLinkClick}>{t.divePackages}</Link></li>
                     </ul>
                   </li>
                   <li className="dropdown-submenu">
                     <span className="submenu-title">{t.snorkeling}</span>
                     <ul className="submenu-items">
-                      <li><Link to="/course/snorkel-trips">{t.snorkelTrips}</Link></li>
+                      <li><Link to="/course/snorkel-trips" onClick={handleLinkClick}>{t.snorkelTrips}</Link></li>
                     </ul>
                   </li>
                 </ul>
               </li>
-              <li><Link to="/#about">{t.about}</Link></li>
-              <li><Link to="/#gallery">{t.gallery}</Link></li>
-              <li><Link to="/#contact">{t.contact}</Link></li>
+              <li><Link to="/#about" onClick={handleLinkClick}>{t.about}</Link></li>
+              <li><Link to="/#gallery" onClick={handleLinkClick}>{t.gallery}</Link></li>
+              <li><Link to="/#contact" onClick={handleLinkClick}>{t.contact}</Link></li>
             </>
           )}
-          <li><Link to="/faqs">{t.faqs}</Link></li>
+          <li><Link to="/faqs" onClick={handleLinkClick}>{t.faqs}</Link></li>
         </ul>
 
         <div className="nav-secondary">
           <LanguageSelector />
         </div>
       </div>
+
+      {/* Overlay to close menu when clicking outside */}
+      {menuOpen && (
+        <div
+          className="menu-overlay"
+          onClick={() => setMenuOpen(false)}
+        />
+      )}
     </nav>
   );
 };
