@@ -64,6 +64,7 @@ export const translations = {
         detailedDescription: 'The Open Water course is a three-day experience designed to give you the confidence, skills, and freedom to dive anywhere in the world. Throughout the course, we include all equipment, transportation, daily meals, and everything you need to feel comfortable and supported from start to finish. The schedule may vary slightly, but in general each day runs between 6 and 8 hours, keeping the experience focused yet unhurried. A personalized, fully guided path to becoming a certified diver — safe, calm, and unforgettable.',
         duration: '3 days + online theory at your own pace',
         price: '$500 USD',
+        medicalForm: '/medical form.pdf',
         requirements: [
           'Minimum age: 10 years old',
           'Basic swimming skills',
@@ -94,6 +95,7 @@ export const translations = {
         detailedDescription: 'Take your diving to the next level with a two-day experience designed for curious, confident explorers. You\'ll strengthen your skills, dive deeper, and enjoy a selection of specialty adventure dives that match your style and interests. With personal guidance and a smooth, comfortable pace, this course helps you explore more of the ocean with confidence, ease, and a sense of true adventure.',
         duration: '2–3 days + self-paced online study',
         price: '$450 USD',
+        medicalForm: '/medical form.pdf',
         requirements: [
           'Open Water certification (or equivalent)',
           'Minimum age: 12 years old',
@@ -123,8 +125,9 @@ export const translations = {
         detailedDescription: 'This course teaches you to recognize, prevent, and manage problems in the water. You will learn self-rescue, how to assist other divers, and techniques to respond to real emergencies. It is challenging but very rewarding training that increases your safety, confidence, and ability to help others underwater. Ask for more info',
         duration: 'Ask for more info',
         price: 'Ask for more info',
+        medicalForm: '/medical form.pdf',
         requirements: [
-          'Advanced Open Water Diver (or equivalent)',
+          'Advanced Open Water Course (or equivalent)',
           'Emergency First Response certification (or equivalent)',
           'Minimum age: 12 years old',
           'Good physical health'
@@ -152,6 +155,7 @@ export const translations = {
         detailedDescription: 'A smooth, stress-free session designed to rebuild your comfort underwater, review essential skills, and get you dive-ready again with total confidence. Ask for more info',
         duration: 'Ask for more info',
         price: 'Ask for more info',
+        medicalForm: '/medical form.pdf',
         requirements: [
           'Valid diving certification from any agency',
           'No minimum time since last dive',
@@ -212,6 +216,7 @@ export const translations = {
         detailedDescription: 'Discover scuba diving with a relaxed, personalized experience designed for first-time divers. You\'ll start with a short briefing and practice a few basic underwater skills at your own pace. After that, enjoy two guided dives—either from shore or by boat, depending on what you prefer—exploring Cozumel\'s vibrant marine life. The full experience takes approximately 6 to 8 hours, giving you plenty of time to learn, enjoy, and feel fully confident in the water.',
         duration: 'Half-day (6-8 hours)',
         price: '$180 USD',
+        medicalForm: '/medical form.pdf',
         requirements: [
           'Minimum age: 10 years old',
           'Basic swimming skills',
@@ -241,6 +246,7 @@ export const translations = {
         detailedDescription: 'Enjoy two guided dives exploring Cozumel\'s vibrant reefs, drifting along stunning walls, and experiencing the island\'s world-class visibility. Perfect for certified divers looking for a relaxed, unforgettable underwater adventure.',
         duration: 'Half-day',
         price: '$150 USD',
+        medicalForm: '/medical form.pdf',
         requirements: [
           'Valid diving certification (any agency)',
           'Minimum age: 10 years old (Junior divers)',
@@ -446,12 +452,13 @@ export const translations = {
         specialty: 'Inmersiones Especializadas'
       },
       openWater: {
-        title: 'Open Water Diver',
+        title: 'Open Water Course',
         shortDescription: 'Aprende a bucear y convértete en un buceador certificado.',
         description: '¡Obtén tu certificación! Aprende habilidades y técnicas esenciales de buceo para convertirte en un buceador certificado. Explora el mundo submarino con confianza y seguridad.',
         flipButtonText: 'Aprende a bucear',
-        detailedDescription: 'El curso Open Water Diver es la certificación de buceo más popular del mundo. Este programa integral combina aprendizaje académico, entrenamiento en agua confinada e inmersiones en aguas abiertas para darte las habilidades y confianza necesarias para bucear de manera independiente con un compañero en cualquier parte del mundo.',
+        detailedDescription: 'El curso Open Water Course es la certificación de buceo más popular del mundo. Este programa integral combina aprendizaje académico, entrenamiento en agua confinada e inmersiones en aguas abiertas para darte las habilidades y confianza necesarias para bucear de manera independiente con un compañero en cualquier parte del mundo.',
         duration: '3-4 días',
+        medicalForm: '/medical form.pdf',
         requirements: [
           'Edad mínima: 10 años',
           'Habilidades básicas de natación',
@@ -479,10 +486,11 @@ export const translations = {
         shortDescription: 'Lleva tus habilidades al siguiente nivel.',
         description: '¡Lleva tus habilidades al siguiente nivel! Amplía tu conocimiento de buceo con inmersiones especializadas que incluyen buceo profundo, navegación y técnicas más avanzadas.',
         flipButtonText: 'Siguiente nivel',
-        detailedDescription: 'El curso PADI Advanced Open Water Diver te ayuda a aumentar tu confianza y desarrollar tus habilidades de buceo para que te sientas más cómodo en el agua. Esta es una excelente manera de acumular más inmersiones mientras continúas aprendiendo bajo la supervisión de tu instructor PADI.',
+        detailedDescription: 'El curso PADI Advanced Open Water Course te ayuda a aumentar tu confianza y desarrollar tus habilidades de buceo para que te sientas más cómodo en el agua. Esta es una excelente manera de acumular más inmersiones mientras continúas aprendiendo bajo la supervisión de tu instructor PADI.',
         duration: '2-3 días',
+        medicalForm: '/medical form.pdf',
         requirements: [
-          'Certificación PADI Open Water Diver (o equivalente)',
+          'Certificación Open Water Course (o equivalente)',
           'Edad mínima: 12 años',
           'Buena salud física'
         ],
@@ -510,8 +518,9 @@ export const translations = {
         flipButtonText: 'Aprende rescate',
         detailedDescription: 'Este curso te enseña a reconocer, prevenir y manejar problemas en el agua. Aprenderás auto-rescate, asistencia a otros buzos y técnicas para responder a emergencias reales. Es un entrenamiento desafiante pero muy gratificante, que aumenta tu seguridad, tu confianza y tu capacidad para ayudar a otros bajo el agua.',
         duration: '3-4 días',
+        medicalForm: '/medical form.pdf',
         requirements: [
-          'PADI Advanced Open Water Diver (o equivalente)',
+          'Advanced Open Water Course (o equivalente)',
           'Certificación Emergency First Response (o equivalente)',
           'Edad mínima: 12 años',
           'Buena salud física'
@@ -540,6 +549,7 @@ export const translations = {
         detailedDescription: 'Una sesión suave y sin estrés diseñada para recuperar tu comodidad bajo el agua, repasar habilidades esenciales y prepararte para bucear nuevamente con total confianza. Pide más información',
         duration: 'Pide más información',
         price: 'Pide más información',
+        medicalForm: '/medical form.pdf',
         requirements: [
           'Certificación de buceo válida de cualquier agencia',
           'Sin límite de tiempo desde la última inmersión',
@@ -599,6 +609,7 @@ export const translations = {
         flipButtonText: 'Pruébalo ahora',
         detailedDescription: 'Discover Scuba Diving es una introducción rápida y fácil a lo que se necesita para explorar el mundo submarino. Esta experiencia te da la oportunidad de probar el buceo por primera vez en una piscina y luego en el océano bajo la supervisión directa de un profesional PADI.',
         duration: 'Medio día (3-4 horas)',
+        medicalForm: '/medical form.pdf',
         requirements: [
           'Edad mínima: 10 años',
           'Habilidades básicas de natación',
@@ -629,6 +640,7 @@ export const translations = {
         flipButtonText: 'Vamos a bucear',
         detailedDescription: 'Únete a nosotros para inmersiones recreativas guiadas para explorar los arrecifes mundialmente famosos de Cozumel. Como buceador certificado, tendrás la oportunidad de bucear en algunos de los mejores sitios del Caribe, conocidos por sus aguas cristalinas, formaciones de coral vibrantes y abundante vida marina.',
         duration: 'Opciones de medio día a día completo',
+        medicalForm: '/medical form.pdf',
         requirements: [
           'Certificación de buceo válida (cualquier agencia)',
           'Edad mínima: 10 años (buceadores junior)',

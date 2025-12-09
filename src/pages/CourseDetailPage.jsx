@@ -131,27 +131,18 @@ const CourseDetailPage = () => {
                             {req}
                           </li>
                         ))}
-                        {t.medicalFormReq && (
+                        {course.medicalForm && (
                           <li>
                             <span className="list-icon">•</span>
-                            <span>
-                              {t.medicalFormReq.split(/<LINK>(.*?)<\/LINK>/).map((part, i) => {
-                                if (i % 2 === 1) {
-                                  return (
-                                    <a
-                                      key={i}
-                                      href={`${baseUrl}medical form.pdf`}
-                                      target="_blank"
-                                      rel="noopener noreferrer"
-                                      style={{ color: 'var(--primary-color)', textDecoration: 'underline', fontWeight: 'bold' }}
-                                    >
-                                      {part}
-                                    </a>
-                                  );
-                                }
-                                return part;
-                              })}
-                            </span>
+                            {language === 'en' ? 'Complete and sign the ' : 'Completar y firmar el '}
+                            <a
+                              href={`${baseUrl}medical%20form.pdf`}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              style={{ color: '#2196F3', textDecoration: 'underline' }}
+                            >
+                              {language === 'en' ? 'medical form' : 'formulario médico'}
+                            </a>
                           </li>
                         )}
                       </ul>
