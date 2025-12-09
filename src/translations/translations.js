@@ -4,8 +4,7 @@ export const translations = {
     nav: {
       home: 'Home',
       services: 'Services',
-      about: 'About',
-      gallery: 'Gallery',
+      reviews: 'Reviews',
       contact: 'Contact',
       faqs: 'FAQs',
       diveCourses: 'Dive Courses',
@@ -58,9 +57,9 @@ export const translations = {
         specialty: 'Specialty Dives'
       },
       openWater: {
-        title: 'Open Water Scuba Diver Course',
+        title: 'Open Water Course',
         shortDescription: 'Learn to dive and become a certified diver.',
-        description: 'The Open Water Diver course teaches you the fundamentals of scuba diving, essential skills, and includes your first ocean dives',
+        description: 'The Open Water course teaches you the fundamentals of scuba diving, essential skills, and includes your first ocean dives',
         flipButtonText: 'Learn to dive',
         detailedDescription: 'The Open Water course is a three-day experience designed to give you the confidence, skills, and freedom to dive anywhere in the world. Throughout the course, we include all equipment, transportation, daily meals, and everything you need to feel comfortable and supported from start to finish. The schedule may vary slightly, but in general each day runs between 6 and 8 hours, keeping the experience focused yet unhurried. A personalized, fully guided path to becoming a certified diver — safe, calm, and unforgettable.',
         duration: '3 days + online theory at your own pace',
@@ -73,10 +72,10 @@ export const translations = {
         ],
         includes: [
           'High-quality scuba gear for all sessions',
-          'Worldwide PADI certification upon completion',
+          'Worldwide certification upon completion',
           'Private confined-water training in a calm, comfortable setting',
           '4 guided open-water dives (2 shore dives + 2 boat dives)',
-          'Access to the official PADI e-Learning platform',
+          'Access to the official e-Learning platform',
           'Marine park fees',
           'Water, snacks & comfort amenities throughout the day'
         ],
@@ -90,13 +89,13 @@ export const translations = {
       advancedOpenWater: {
         title: 'Advanced Adventure Course',
         shortDescription: 'Take your diving to the next level.',
-        description: 'The Advanced Open Water Diver course helps you build confidence, improve your skills, and explore deeper, more exciting environments',
+        description: 'The Advanced Open Water course helps you build confidence, improve your skills, and explore deeper, more exciting environments',
         flipButtonText: 'Next level',
         detailedDescription: 'Take your diving to the next level with a two-day experience designed for curious, confident explorers. You\'ll strengthen your skills, dive deeper, and enjoy a selection of specialty adventure dives that match your style and interests. With personal guidance and a smooth, comfortable pace, this course helps you explore more of the ocean with confidence, ease, and a sense of true adventure.',
         duration: '2–3 days + self-paced online study',
         price: '$450 USD',
         requirements: [
-          'PADI Open Water Diver certification (or equivalent)',
+          'Open Water certification (or equivalent)',
           'Minimum age: 12 years old',
           'Good physical health'
         ],
@@ -119,19 +118,19 @@ export const translations = {
       rescueDiver: {
         title: 'Rescue Course',
         shortDescription: 'Become a confident rescuer and help others.',
-        description: 'Learn to prevent and manage problems in the water. Become more confident in your skills as a diver, knowing that you can help others if needed.',
+        description: 'Course designed to learn how to prevent problems and respond to emergencies underwater. It gives you more safety, confidence, and control in diving.',
         flipButtonText: 'Click Me',
-        detailedDescription: 'A challenging and rewarding training that elevates your confidence, sharpens your awareness, and teaches you how to handle real-world diving emergencies with calm and control. Ask for more info',
+        detailedDescription: 'This course teaches you to recognize, prevent, and manage problems in the water. You will learn self-rescue, how to assist other divers, and techniques to respond to real emergencies. It is challenging but very rewarding training that increases your safety, confidence, and ability to help others underwater. Ask for more info',
         duration: 'Ask for more info',
         price: 'Ask for more info',
         requirements: [
-          'PADI Advanced Open Water Diver (or equivalent)',
+          'Advanced Open Water Diver (or equivalent)',
           'Emergency First Response certification (or equivalent)',
           'Minimum age: 12 years old',
           'Good physical health'
         ],
         includes: [
-          'PADI Rescue Diver materials',
+          'Rescue Diver materials',
           'All diving equipment',
           'Rescue skills training',
           'Emergency scenario practice',
@@ -178,12 +177,32 @@ export const translations = {
         title: 'Snorkel Tour',
         shortDescription: 'Want to see starfish?',
         description: 'Go snorkeling in Cozumel and drift over crystal-clear reefs and incredible marine life in a smooth, effortless experience — we take care of everything; you just enjoy.',
-        detailedDescription: 'Go snorkeling in Cozumel and drift over crystal-clear reefs and incredible marine life in a smooth, effortless experience — we take care of everything; you just enjoy.',
-        duration: 'Ask for more info',
+        flipButtonText: 'Click Me',
+        detailedDescription: 'Experience the magic of Cozumel\'s underwater world without the need for diving certification. Our guided snorkel tours take you to the best shallow reef spots where you can float effortlessly over vibrant coral formations, colorful fish, sea turtles, and rays. Perfect for families, beginners, and anyone who wants to explore the Caribbean\'s crystal-clear waters. We provide all equipment and ensure a safe, fun experience for everyone.',
+        duration: '2-3 hours',
         price: 'Ask for more info',
-        requirements: [],
-        includes: [],
-        highlights: []
+        requirements: [
+          'Basic swimming ability',
+          'Minimum age: 6 years old',
+          'Good physical health',
+          'No experience required'
+        ],
+        includes: [
+          'All snorkeling equipment (mask, snorkel, fins)',
+          'Life jacket',
+          'Professional guide',
+          'Boat transportation',
+          'Refreshments on board',
+          'Marine park fees'
+        ],
+        highlights: [
+          'Explore shallow coral reefs',
+          'See tropical fish, turtles, and rays',
+          'Crystal-clear Caribbean waters',
+          'Perfect for all ages',
+          'Small group experience',
+          'Safety-focused professional guides'
+        ]
       },
       discovery: {
         title: 'Discover Scuba Diving',
@@ -272,6 +291,14 @@ export const translations = {
       subtitle: 'Tag us to see your image featured on our page',
       loadMore: 'Load More'
     },
+    // Customer Reviews
+    customerReviews: {
+      title: 'What Our Divers Say',
+      subtitle: 'Real experiences from our diving community',
+      ctaTitle: 'Share Your Experience',
+      ctaText: 'Have you dived with us? We\'d love to hear about your experience!',
+      ctaButton: 'Leave a Review'
+    },
     // Contact
     contact: {
       title: 'Get in Touch',
@@ -292,6 +319,73 @@ export const translations = {
     whatsapp: {
       general: 'Hello! I would like to get information about the diving experiences you offer. Could you help me? Thank you!',
       booking: 'Hello! I would like to book the *{course}* course. Could you give me more information about availability and prices? Thank you!'
+    },
+    // FAQs
+    faqPage: {
+      title: 'Frequently Asked Questions',
+      subtitle: 'Everything you need to know about diving in Cozumel',
+      faqs: [
+        {
+          question: 'Do I need to be certified to dive?',
+          answer: 'Not necessarily. First-timers can join a Discover Scuba Diving experience with an instructor.'
+        },
+        {
+          question: 'How long does a 2-tank dive take?',
+          answer: 'Most trips take around 4–5 hours.'
+        },
+        {
+          question: 'How do you choose the dive sites?',
+          answer: 'We consider ocean conditions, experience level, and what the group wants to explore.'
+        },
+        {
+          question: 'What are the best dive sites in the area?',
+          answer: 'Palancar (Gardens, Caves, Horseshoe), Santa Rosa Wall, Colombia, and Cedral — all famous for visibility, drift diving, and vibrant reefs.'
+        },
+        {
+          question: 'Do you offer Nitrox?',
+          answer: 'Yes. Nitrox is available for certified divers upon request (extra fee may apply).'
+        },
+        {
+          question: 'What marine life can I expect to see?',
+          answer: 'Turtles, eagle rays, nurse sharks, moray eels, barracuda, giant sponges, and loads of reef fish.'
+        },
+        {
+          question: 'What\'s the water temperature like?',
+          answer: 'Warm year-round: about 24–26°C (76–78°F) in winter and 28–30°C (82–86°F) in summer.'
+        },
+        {
+          question: 'How do I get to Cozumel?',
+          answer: 'You can fly directly to Cozumel International Airport or arrive via ferry from Playa del Carmen (runs every day, every 30 minutes)'
+        },
+        {
+          question: 'Do you offer hotel pick-ups?',
+          answer: 'No, we don\'t offer pick-ups. We meet directly at the marina at the scheduled time.'
+        },
+        {
+          question: 'Where do the boats depart from?',
+          answer: 'We depart from the marina, and you\'ll receive exact meeting instructions after booking.'
+        },
+        {
+          question: 'Can I join if I haven\'t dived in a long time?',
+          answer: 'Yes. A refresher or a slow, easy first dive can help you feel comfortable again.'
+        },
+        {
+          question: 'Are private dives available?',
+          answer: 'Yes. Private guides and private boats can be arranged on request.'
+        },
+        {
+          question: 'What if the weather is bad?',
+          answer: 'If the port closes or conditions are unsafe, the trip may be rescheduled or refunded.'
+        },
+        {
+          question: 'What\'s the typical group size?',
+          answer: 'We keep small groups to ensure a relaxed, personalized experience.'
+        },
+        {
+          question: 'Does the Marine Park have rules?',
+          answer: 'Yes. The Cozumel Marine Park has strict regulations: no sunscreen, no gloves, no sticks, and no touching the coral or marine life at any time.'
+        }
+      ]
     }
   },
   es: {
@@ -299,10 +393,9 @@ export const translations = {
     nav: {
       home: 'Inicio',
       services: 'Servicios',
-      about: 'Acerca de',
-      gallery: 'Galería',
+      reviews: 'Reviews',
       contact: 'Contacto',
-      faqs: 'Preguntas Frecuentes',
+      faqs: 'FAQs',
       diveCourses: 'Cursos de Buceo',
       recreationalDiving: 'Buceo Recreativo',
       snorkeling: 'Snorkel',
@@ -355,9 +448,9 @@ export const translations = {
       openWater: {
         title: 'Open Water Diver',
         shortDescription: 'Aprende a bucear y convértete en un buceador certificado.',
-        description: '¡Obtén tu certificación PADI! Aprende habilidades y técnicas esenciales de buceo para convertirte en un buceador certificado. Explora el mundo submarino con confianza y seguridad.',
+        description: '¡Obtén tu certificación! Aprende habilidades y técnicas esenciales de buceo para convertirte en un buceador certificado. Explora el mundo submarino con confianza y seguridad.',
         flipButtonText: 'Aprende a bucear',
-        detailedDescription: 'El curso PADI Open Water Diver es la certificación de buceo más popular del mundo. Este programa integral combina aprendizaje académico, entrenamiento en agua confinada e inmersiones en aguas abiertas para darte las habilidades y confianza necesarias para bucear de manera independiente con un compañero en cualquier parte del mundo.',
+        detailedDescription: 'El curso Open Water Diver es la certificación de buceo más popular del mundo. Este programa integral combina aprendizaje académico, entrenamiento en agua confinada e inmersiones en aguas abiertas para darte las habilidades y confianza necesarias para bucear de manera independiente con un compañero en cualquier parte del mundo.',
         duration: '3-4 días',
         requirements: [
           'Edad mínima: 10 años',
@@ -411,11 +504,11 @@ export const translations = {
         ]
       },
       rescueDiver: {
-        title: 'Rescue Scuba Diver',
+        title: 'Rescue Course',
         shortDescription: 'Convértete en un rescatista seguro y ayuda a otros.',
-        description: '¡Conviértete en un rescatista seguro! Aprende a prevenir y manejar problemas en el agua, y gana más confianza en tus habilidades como buceador, sabiendo que puedes ayudar a otros si es necesario.',
+        description: 'Curso diseñado para aprender a prevenir problemas y responder a emergencias bajo el agua. Te da más seguridad, confianza y control en el buceo.',
         flipButtonText: 'Aprende rescate',
-        detailedDescription: 'El curso PADI Rescue Diver te preparará para prevenir y manejar problemas, y mejorar tu confianza como buceador. Este curso desafiante pero gratificante amplía enormemente tu nivel de conocimiento y experiencia.',
+        detailedDescription: 'Este curso te enseña a reconocer, prevenir y manejar problemas en el agua. Aprenderás auto-rescate, asistencia a otros buzos y técnicas para responder a emergencias reales. Es un entrenamiento desafiante pero muy gratificante, que aumenta tu seguridad, tu confianza y tu capacidad para ayudar a otros bajo el agua.',
         duration: '3-4 días',
         requirements: [
           'PADI Advanced Open Water Diver (o equivalente)',
@@ -469,8 +562,35 @@ export const translations = {
         ]
       },
       snorkeling: {
-        title: 'Snorkeling',
-        description: 'Explora las aguas superficiales y arrecifes de coral con solo una máscara y snorkel. Perfecto para todas las edades y niveles de habilidad. Descubre la belleza de los arrecifes poco profundos de Cozumel.'
+        title: 'Tour de Snorkel',
+        shortDescription: '¿Quieres ver estrellas de mar?',
+        description: 'Haz snorkel en Cozumel y flota sobre arrecifes cristalinos e increíble vida marina en una experiencia suave y sin esfuerzo — nosotros nos encargamos de todo; tú solo disfruta.',
+        flipButtonText: 'Reserva ahora',
+        detailedDescription: 'Experimenta la magia del mundo submarino de Cozumel sin necesidad de certificación de buceo. Nuestros tours guiados de snorkel te llevan a los mejores puntos de arrecifes poco profundos donde puedes flotar sin esfuerzo sobre vibrantes formaciones de coral, peces coloridos, tortugas marinas y rayas. Perfecto para familias, principiantes y cualquiera que quiera explorar las aguas cristalinas del Caribe. Proporcionamos todo el equipo y aseguramos una experiencia segura y divertida para todos.',
+        duration: '2-3 horas',
+        price: 'Pide más información',
+        requirements: [
+          'Habilidad básica de natación',
+          'Edad mínima: 6 años',
+          'Buena salud física',
+          'No se requiere experiencia'
+        ],
+        includes: [
+          'Todo el equipo de snorkel (máscara, snorkel, aletas)',
+          'Chaleco salvavidas',
+          'Guía profesional',
+          'Transporte en barco',
+          'Refrigerios a bordo',
+          'Tarifas del parque marino'
+        ],
+        highlights: [
+          'Explora arrecifes de coral poco profundos',
+          'Observa peces tropicales, tortugas y rayas',
+          'Aguas cristalinas del Caribe',
+          'Perfecto para todas las edades',
+          'Experiencia en grupos pequeños',
+          'Guías profesionales enfocados en seguridad'
+        ]
       },
       discovery: {
         title: 'Discover Scuba Diving',
@@ -487,8 +607,8 @@ export const translations = {
         ],
         includes: [
           'Todo el equipo de buceo',
-          'Sesión de entrenamiento en piscina',
-          '1 inmersión en el océano (máx 12m/40ft)',
+          'Sesión de entrenamiento en aguas poco profundas',
+          '2 inmersiones en el mar desde barco',
           'Instructor profesional PADI',
           'Grupos pequeños',
           'Fotos submarinas (opcional)'
@@ -548,18 +668,26 @@ export const translations = {
     // About
     about: {
       title: 'Sobre mí',
-      description: '¡Hola! Soy Juan, Instructor de Buceo PADI y SSI, originalmente de Argentina. Me mudé a México hace cinco años y hice de Cozumel mi hogar, un lugar que me permite vivir cerca del océano y compartir lo que más amo. Llevo más de seis años buceando, y mi pasión es transmitir mi amor por el mar y crear experiencias únicas e inolvidables. En Social Diving Club, hacemos fun dives, Discover Scuba Diving (DSD), cursos de buceo y buceo privado, siempre enfocados en la comodidad, la seguridad y una experiencia relajada y personalizada. Y cuando buceás conmigo, nos encargamos absolutamente de todo, para que tu solo disfrutes del océano, respires y vivas el momento. Creemos juntos una experiencia memorable.'
+      description: '¡Hola! Soy Juan, Instructor de Buceo PADI y SSI, originalmente de Argentina. Me mudé a México hace cinco años y hice de Cozumel mi hogar, un lugar que me permite vivir cerca del océano y compartir lo que más amo. Llevo más de seis años buceando y mi pasión es transmitir mi amor por el mar y crear experiencias únicas e inolvidables. En Social Diving Club, hacemos fun dives, Discover Scuba Diving (DSD), cursos de buceo y buceo privado, siempre enfocados en la comodidad, la seguridad y una experiencia relajada y personalizada. Y cuando buceás conmigo, nos encargamos absolutamente de todo, para que tu solo disfrutes del océano, respires y vivas el momento. Creemos juntos una experiencia memorable.'
     },
     // Why Cozumel
     whyCozumel: {
       title: 'Por Qué Elegir Cozumel',
-      description: 'Porque aquí buceas en agua cristalina con una visibilidad que a menudo se siente infinita. Estás explorando parte del Arrecife Mesoamericano, rodeado de paredes dramáticas, formaciones de coral vibrantes y vida marina que aparece en casi cada inmersión. Las condiciones son ideales todo el año, el buceo a la deriva es sin esfuerzo, y cada sitio ofrece algo diferente — desde bajíos tranquilos hasta paredes icónicas que caen en el azul profundo. Es el tipo de lugar donde incluso una sola inmersión se siente inolvidable.'
+      description: 'Porque aquí buceas en agua cristalina con una visibilidad que a menudo se siente infinita. Estás explorando parte del Arrecife Mesoamericano, rodeado de paredes dramáticas, formaciones de coral vibrantes y vida marina que aparece en casi cada inmersión. Las condiciones son ideales todo el año, el buceo a la deriva es sin esfuerzo y cada sitio ofrece algo diferente — desde bajíos tranquilos hasta paredes icónicas que caen en el azul profundo. Es el tipo de lugar donde incluso una sola inmersión se siente inolvidable.'
     },
     // Gallery
     gallery: {
       title: 'Hecho por nosotros, Compartido por ti',
       subtitle: 'Etiquétanos para ver tu imagen destacada en nuestra página',
       loadMore: 'Cargar Más'
+    },
+    // Customer Reviews
+    customerReviews: {
+      title: 'Lo Que Dicen Nuestros Buzos',
+      subtitle: 'Experiencias reales de nuestra comunidad de buceo',
+      ctaTitle: 'Comparte Tu Experiencia',
+      ctaText: '¿Has buceado con nosotros? ¡Nos encantaría conocer tu experiencia!',
+      ctaButton: 'Dejar una Opinión'
     },
     // Contact
     contact: {
@@ -581,6 +709,73 @@ export const translations = {
     whatsapp: {
       general: '¡Hola! Me gustaría obtener información sobre las experiencias de buceo que ofrecen. ¿Podrían ayudarme? ¡Gracias!',
       booking: '¡Hola! Me gustaría reservar el curso de *{course}*. ¿Podrían darme más información sobre disponibilidad y precios? ¡Gracias!'
+    },
+    // FAQs
+    faqPage: {
+      title: 'Preguntas Frecuentes',
+      subtitle: 'Todo lo que necesitas saber sobre el buceo en Cozumel',
+      faqs: [
+        {
+          question: '¿Necesito estar certificado para bucear?',
+          answer: 'No necesariamente. Los principiantes pueden unirse a una experiencia Discover Scuba Diving con un instructor.'
+        },
+        {
+          question: '¿Cuánto tiempo dura una inmersión de 2 tanques?',
+          answer: 'La mayoría de los viajes duran alrededor de 4-5 horas.'
+        },
+        {
+          question: '¿Cómo eligen los sitios de buceo?',
+          answer: 'Consideramos las condiciones del océano, el nivel de experiencia y lo que el grupo quiere explorar.'
+        },
+        {
+          question: '¿Cuáles son los mejores sitios de buceo en la zona?',
+          answer: 'Palancar (Gardens, Caves, Horseshoe), Santa Rosa Wall, Colombia y Cedral — todos famosos por su visibilidad, buceo a la deriva y arrecifes vibrantes.'
+        },
+        {
+          question: '¿Ofrecen Nitrox?',
+          answer: 'Sí. El Nitrox está disponible para buzos certificados bajo petición (puede aplicar un cargo adicional).'
+        },
+        {
+          question: '¿Qué vida marina puedo esperar ver?',
+          answer: 'Tortugas, rayas águila, tiburones nodriza, morenas, barracudas, esponjas gigantes y muchos peces de arrecife.'
+        },
+        {
+          question: '¿Cómo es la temperatura del agua?',
+          answer: 'Cálida todo el año: aproximadamente 24-26°C (76-78°F) en invierno y 28-30°C (82-86°F) en verano.'
+        },
+        {
+          question: '¿Cómo llego a Cozumel?',
+          answer: 'Puedes volar directamente al Aeropuerto Internacional de Cozumel o llegar en ferry desde Playa del Carmen (sale todos los días, cada 30 minutos)'
+        },
+        {
+          question: '¿Ofrecen recogida en el hotel?',
+          answer: 'No, no ofrecemos recogidas. Nos reunimos directamente en la marina a la hora programada.'
+        },
+        {
+          question: '¿De dónde salen los barcos?',
+          answer: 'Salimos de la marina, y recibirás instrucciones exactas del punto de encuentro después de reservar.'
+        },
+        {
+          question: '¿Puedo unirme si no he buceado en mucho tiempo?',
+          answer: 'Sí. Un curso de repaso o una primera inmersión lenta y fácil puede ayudarte a sentirte cómodo nuevamente.'
+        },
+        {
+          question: '¿Hay inmersiones privadas disponibles?',
+          answer: 'Sí. Se pueden organizar guías privados y barcos privados bajo petición.'
+        },
+        {
+          question: '¿Qué pasa si el clima es malo?',
+          answer: 'Si el puerto cierra o las condiciones no son seguras, el viaje puede reprogramarse o reembolsarse.'
+        },
+        {
+          question: '¿Cuál es el tamaño típico del grupo?',
+          answer: 'Mantenemos grupos pequeños para garantizar una experiencia relajada y personalizada.'
+        },
+        {
+          question: '¿El Parque Marino tiene reglas?',
+          answer: 'Sí. El Parque Marino de Cozumel tiene regulaciones estrictas: no protector solar, no guantes, no palos, y no tocar el coral o la vida marina en ningún momento.'
+        }
+      ]
     }
   }
 };

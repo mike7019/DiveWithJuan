@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useLanguage } from '../context/useLanguage';
 import { translations } from '../translations/translations';
-import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import emailjs from '@emailjs/browser';
 import './Reviews.css';
 
 const Reviews = () => {
@@ -16,6 +17,9 @@ const Reviews = () => {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState(null);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -25,18 +29,42 @@ const Reviews = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const phoneNumber = '5219842772929';
-    const message = `${t.newMessage}\n\n${t.name}: ${formData.name} ${formData.lastName}\nEmail: ${formData.email}\n${t.phone}: ${formData.phone}\n\n${t.message}:\n${formData.message}`;
-    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+    setIsSubmitting(true);
+    setSubmitStatus(null);
     
-    // Reset form
-    setFormData({
-      name: '',
-      lastName: '',
-      email: '',
-      phone: '',
-      message: ''
+    const templateParams = {
+      name: `${formData.name} ${formData.lastName}`,
+      email: formData.email,
+      phone: formData.phone,
+      message: formData.message
+    };
+
+    console.log('Sending email with params:', templateParams);
+
+    emailjs.send(
+      'service_hrlpo4l',
+      'template_dv3hys9',
+      templateParams,
+      'JFL2czoF08w-b414Z'
+    )
+    .then((response) => {
+      console.log('SUCCESS!', response.status, response.text);
+      setSubmitStatus('success');
+      // Reset form
+      setFormData({
+        name: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: ''
+      });
+    })
+    .catch((error) => {
+      console.error('FAILED...', error);
+      setSubmitStatus('error');
+    })
+    .finally(() => {
+      setIsSubmitting(false);
     });
   };
 
@@ -48,19 +76,24 @@ const Reviews = () => {
             <h2 className="section-title">{t.title}</h2>
             
             <div className="info-item">
+              <p className="info-text"><strong>Juan De San Benito</strong></p>
+            </div>
+
+            <div className="info-item">
               <p className="info-text">Cozumel, Quintana Roo, México</p>
             </div>
 
             <div className="info-item">
-              <p className="info-text">+52 1 984 277 2929</p>
+              <p className="info-text">+52 984 277 2929</p>
+            </div>
+
+            <div className="info-item">
+              <p className="info-text">socialdivingclubcozumel@gmail.com</p>
             </div>
 
             <div className="social-links">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
                 <FaFacebook />
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
-                <FaTwitter />
               </a>
               <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                 <FaInstagram />
@@ -127,8 +160,23 @@ const Reviews = () => {
                 ></textarea>
               </div>
 
-              <button type="submit" className="submit-btn">
-                {t.send}
+              {submitStatus === 'success' && (
+                <div className="submit-message success">
+                  {language === 'en' ? '✓ Message sent successfully!' : '✓ ¡Mensaje enviado exitosamente!'}
+                </div>
+              )}
+              
+              {submitStatus === 'error' && (
+                <div className="submit-message error">
+                  {language === 'en' ? '✗ Error sending message. Please try again.' : '✗ Error al enviar el mensaje. Por favor intenta de nuevo.'}
+                </div>
+              )}
+
+              <button type="submit" className="submit-btn" disabled={isSubmitting}>
+                {isSubmitting 
+                  ? (language === 'en' ? 'Sending...' : 'Enviando...') 
+                  : t.send
+                }
               </button>
             </form>
           </div>

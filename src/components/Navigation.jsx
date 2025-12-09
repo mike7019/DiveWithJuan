@@ -88,8 +88,7 @@ const Navigation = () => {
                   </li>
                 </ul>
               </li>
-              <li><a href="#about" onClick={handleLinkClick}>{t.about}</a></li>
-              <li><a href="#gallery" onClick={handleLinkClick}>{t.gallery}</a></li>
+              <li><a href="#reviews" onClick={handleLinkClick}>{t.reviews}</a></li>
               <li><a href="#contact" onClick={handleLinkClick}>{t.contact}</a></li>
             </>
           ) : (
@@ -126,8 +125,7 @@ const Navigation = () => {
                   </li>
                 </ul>
               </li>
-              <li><Link to="/#about" onClick={handleLinkClick}>{t.about}</Link></li>
-              <li><Link to="/#gallery" onClick={handleLinkClick}>{t.gallery}</Link></li>
+              <li><Link to="/#reviews" onClick={handleLinkClick}>{t.reviews}</Link></li>
               <li><Link to="/#contact" onClick={handleLinkClick}>{t.contact}</Link></li>
             </>
           )}

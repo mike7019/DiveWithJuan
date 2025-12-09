@@ -40,6 +40,10 @@ const CourseDetailPage = () => {
     'refresher': {
       key: 'refresherCourse',
       image: `${baseUrl}images-courses/reef cave diver.jpg`
+    },
+    'snorkel-trips': {
+      key: 'snorkeling',
+      image: `${baseUrl}images-courses/FOTO PARA FUNDIVE.jpg`
     }
   };
 

@@ -8,6 +8,7 @@ import WhyCozumel from './components/WhyCozumel';
 import Courses from './components/Courses';
 import Features from './components/Features';
 import Gallery from './components/Gallery';
+import CustomerReviews from './components/CustomerReviews';
 import Reviews from './components/Reviews';
 import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
@@ -29,6 +30,7 @@ function HomePage() {
           <About />
           <WhyCozumel />
           <Gallery />
+          <CustomerReviews />
           <Reviews />
         </main>
         <footer>
