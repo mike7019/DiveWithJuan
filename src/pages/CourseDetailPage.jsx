@@ -134,7 +134,7 @@ const CourseDetailPage = () => {
                         {course.medicalForm && (
                           <li>
                             <span className="list-icon">•</span>
-                            {language === 'en' ? 'Complete and sign the ' : 'Completar y firmar el '}
+                            {language === 'en' ? 'Read it to see if you’re fit for dive: ' : 'Lee el formulario para ver si eres apto'}
                             <a
                               href={`${baseUrl}medical%20form.pdf`}
                               target="_blank"
