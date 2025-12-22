@@ -14,7 +14,7 @@ const About = () => {
         <div className="about-grid">
           <div className="about-image">
             <img 
-              src={`${baseUrl}about me.jpg`} 
+              src={`${baseUrl}about me.jpeg`} 
               alt="Juan De San Benito - Professional PADI Scuba Diving Instructor in Cozumel, Mexico" 
               loading="lazy"
             />

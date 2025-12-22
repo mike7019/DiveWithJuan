@@ -30,19 +30,19 @@ export const translations = {
       mainTitle: 'DISCOVER COZUMEL\'S MESOAMERICAN REEF AND EXPLORE UNDERWATER FASCINATING WORLD',
       feature1: {
         title: 'Explore Cozumel\'s reefs',
-        description: 'Explore Cozumel\'s reefs — a vibrant underwater paradise within the protected Marine Park.'
+        description: 'A vibrant underwater paradise filled with crystal-clear water and vibrant coral formations'
       },
       feature2: {
         title: 'Caring for the ocean',
-        description: 'Caring for the ocean is part of the adventure. Every dive helps protect this natural treasure.'
+        description: 'It begins with knowing it — you can’t protect what you don’t love, and you can’t love what you don’t know.'
       },
       feature3: {
         title: 'Among colorful corals',
-        description: 'Among colorful corals and tropical fish, discover the life that makes the Caribbean so unique.'
+        description: 'Discover the life below the surface that makes the Caribbean truly unique'
       },
       feature4: {
         title: 'The magic is in the details',
-        description: 'The magic is in the details. Look, don\'t touch — and let yourself be amazed by marine life.'
+        description: 'Look, don’t touch, and let yourself be amazed by Cozumel'
       }
     },
     // Courses
@@ -425,19 +425,19 @@ export const translations = {
       mainTitle: 'DESCUBRE EL ARRECIFE MESOAMERICANO DE COZUMEL Y EXPLORA EL FASCINANTE MUNDO SUBMARINO',
       feature1: {
         title: 'Explora los arrecifes de Cozumel',
-        description: 'Explora los arrecifes de Cozumel — un vibrante paraíso submarino dentro del Parque Marino protegido.'
+        description: 'Un paraiso submarino con aguas cristalinas y formaciones de coral increibles'
       },
       feature2: {
         title: 'Cuidar el océano',
-        description: 'Cuidar el océano es parte de la aventura. Cada inmersión ayuda a proteger este tesoro natural.'
+        description: 'Empieza por conocerlo. No puedes proteger lo que no amas y no puedes amar lo que no conoces'
       },
       feature3: {
         title: 'Entre corales coloridos',
-        description: 'Entre corales coloridos y peces tropicales, descubre la vida que hace al Caribe tan único.'
+        description: 'Descubre la espectacular vida marina que hace al caribe un lugar único en el mundo'
       },
       feature4: {
         title: 'La magia está en los detalles',
-        description: 'La magia está en los detalles. Mira, no toques — y déjate sorprender por la vida marina.'
+        description: 'Mira pero no toca. Déjate asombrar por Cozumel'
       }
     },
     // Courses

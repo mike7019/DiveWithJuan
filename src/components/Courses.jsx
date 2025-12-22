@@ -15,7 +15,7 @@ const Courses = () => {
     {
       id: 1,
       title: t.discovery.title,
-      image: `${baseUrl}images-courses/FOTO PARA DSD.jpg`,
+      image: `${baseUrl}images-courses/FOTO PARA DSD.jpeg`,
       shortDescription: t.discovery.shortDescription,
       description: t.discovery.description,
       detailedDescription: t.discovery.detailedDescription,
