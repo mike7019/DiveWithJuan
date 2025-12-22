@@ -27,7 +27,7 @@ const CourseDetailPage = () => {
     },
     'discovery': {
       key: 'discovery',
-      image: `${baseUrl}images-courses/FOTO PARA DSD.jpeg`
+      image: `${baseUrl}images-courses/discover-scuba-diving.jpg`
     },
     'fun-dive': {
       key: 'funDive',
@@ -39,7 +39,7 @@ const CourseDetailPage = () => {
     },
     'refresher': {
       key: 'refresherCourse',
-      image: `${baseUrl}images-courses/reef cave diver.jpg.jpeg`
+      image: `${baseUrl}images-courses/reef-cave-diver.jpg`
     },
     'snorkel-trips': {
       key: 'snorkeling',

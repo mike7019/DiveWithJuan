@@ -15,7 +15,7 @@ const Courses = () => {
     {
       id: 1,
       title: t.discovery.title,
-      image: `${baseUrl}images-courses/FOTO PARA DSD.jpeg`,
+      image: `${baseUrl}images-courses/discover-scuba-diving.jpg`,
       shortDescription: t.discovery.shortDescription,
       description: t.discovery.description,
       detailedDescription: t.discovery.detailedDescription,
@@ -65,7 +65,7 @@ const Courses = () => {
     {
       id: 6,
       title: t.refresherCourse.title,
-      image: `${baseUrl}images-courses/reef cave diver.jpg.jpeg`,
+      image: `${baseUrl}images-courses/reef-cave-diver.jpg`,
       shortDescription: t.refresherCourse.shortDescription,
       description: t.refresherCourse.description,
       detailedDescription: t.refresherCourse.detailedDescription,
