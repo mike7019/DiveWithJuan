@@ -27,7 +27,7 @@ const CourseDetailPage = () => {
     },
     'discovery': {
       key: 'discovery',
-      image: `${baseUrl}images-courses/FOTO PARA DSD.jpg`
+      image: `${baseUrl}images-courses/FOTO PARA DSD.jpeg`
     },
     'fun-dive': {
       key: 'funDive',
@@ -39,11 +39,16 @@ const CourseDetailPage = () => {
     },
     'refresher': {
       key: 'refresherCourse',
-      image: `${baseUrl}images-courses/reef cave diver.jpg`
+      image: `${baseUrl}images-courses/reef cave diver.jpg.jpeg`
     },
     'snorkel-trips': {
       key: 'snorkeling',
       image: `${baseUrl}images-courses/FOTO PARA FUNDIVE.jpg`
+    },
+    'dive-packages': {
+      key: 'divePackages',
+      image: `${baseUrl}images-courses/FOTO PARA FUNDIVE.jpg`,
+      isPackage: true
     }
   };
 
@@ -107,6 +112,30 @@ const CourseDetailPage = () => {
                     </section>
                   )}
 
+                  {/* Packages Section - Only for dive packages */}
+                  {courseData.isPackage && course.packages && (
+                    <section className="detail-section packages-section">
+                      <h2>{language === 'en' ? 'Available Packages' : 'Paquetes Disponibles'}</h2>
+                      <div className="packages-grid">
+                        {course.packages.map((pkg, index) => (
+                          <div key={index} className="package-card">
+                            <div className="package-header">
+                              <h3>{pkg.name}</h3>
+                              <div className="package-price">
+                                <span className="price-large">{pkg.price}</span>
+                                <span className="price-per-dive">{pkg.pricePerDive} {language === 'en' ? 'per dive' : 'por inmersión'}</span>
+                              </div>
+                            </div>
+                            <p className="package-description">{pkg.description}</p>
+                            <div className="package-dives">
+                              <span className="dives-badge">{pkg.dives} {language === 'en' ? 'Dives' : 'Inmersiones'}</span>
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
                   {course.highlights && (
                     <section className="detail-section">
                       <h2>{language === 'en' ? 'Highlights' : 'Aspectos Destacados'}</h2>
@@ -134,7 +163,7 @@ const CourseDetailPage = () => {
                         {course.medicalForm && (
                           <li>
                             <span className="list-icon">•</span>
-                            {language === 'en' ? 'Read it to see if you’re fit for dive: ' : 'Lee el formulario para ver si eres apto'}
+                            {language === 'en' ? 'Read it to see if you\'re fit for dive: ' : 'Verifica si eres apto: '}
                             <a
                               href={`${baseUrl}medical%20form.pdf`}
                               target="_blank"

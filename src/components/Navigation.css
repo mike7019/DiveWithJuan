@@ -7,14 +7,14 @@
   background: transparent;
   backdrop-filter: none;
   -webkit-backdrop-filter: none;
-  padding: 25px 0;
+  padding: 15px 0;
   transition: all 0.4s ease;
   box-shadow: none;
   border-bottom: none;
 }
 
 .navigation.scrolled {
-  padding: 15px 0;
+  padding: 10px 0;
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(25px) saturate(180%);
   -webkit-backdrop-filter: blur(25px) saturate(180%);
@@ -54,7 +54,7 @@
 }
 
 .logo-image {
-  height: 90px;
+  height: 70px;
   width: auto;
   object-fit: contain;
   transition: transform 0.3s ease, filter 0.3s ease;
@@ -62,7 +62,7 @@
 }
 
 .navigation.scrolled .logo-image {
-  height: 90px;
+  height: 70px;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) brightness(1);
 }
 
@@ -156,15 +156,17 @@
   top: 100%;
   left: 0;
   background: var(--white);
-  min-width: 280px;
-  padding: 20px 0;
+  min-width: 260px;
+  max-height: 70vh;
+  overflow-y: auto;
+  padding: 12px 0;
   border-radius: 8px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
   transition: all 0.3s ease;
-  margin-top: 15px;
+  margin-top: 10px;
   z-index: 1001;
 }
 
@@ -175,7 +177,7 @@
 }
 
 .dropdown-submenu {
-  padding: 15px 25px;
+  padding: 10px 20px;
   border-bottom: 1px solid rgba(0, 123, 255, 0.1);
 }
 
@@ -185,12 +187,12 @@
 
 .submenu-title {
   display: block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   color: var(--primary-color);
-  margin-bottom: 10px;
+  margin-bottom: 6px;
 }
 
 .submenu-items {
@@ -205,11 +207,11 @@
 
 .submenu-items li a {
   display: block;
-  padding: 8px 12px;
-  font-size: 15px;
+  padding: 6px 10px;
+  font-size: 14px;
   font-weight: 500;
   text-transform: none;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.3px;
   color: var(--text-color);
   text-shadow: none !important;
   transition: all 0.2s ease;
@@ -463,12 +465,8 @@
 /* Very small screens */
 @media (max-width: 360px) {
   .logo a {
-    font-size: 16px;
+    font-size: 14px;
     gap: 6px;
-  }
-
-  .logo a span {
-    display: none;
   }
 
   .logo-image {

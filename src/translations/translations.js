@@ -14,7 +14,7 @@ export const translations = {
       openWater: 'Open Water Course',
       advancedCourse: 'Advanced Course',
       rescue: 'Rescue Course',
-      refresherCourse: 'Refresher Course',
+      refresherCourse: 'Refresher Dive',
       funDive: 'Fun Dive',
       divePackages: 'Dive Packages',
       snorkelTrips: 'Snorkel Trips'
@@ -30,19 +30,19 @@ export const translations = {
       mainTitle: 'DISCOVER COZUMEL\'S MESOAMERICAN REEF AND EXPLORE UNDERWATER FASCINATING WORLD',
       feature1: {
         title: 'Explore Cozumel\'s reefs',
-        description: 'A vibrant underwater paradise filled with crystal-clear water and vibrant coral formations'
+        description: 'Explore Cozumel\'s reefs — a vibrant underwater paradise within the protected Marine Park.'
       },
       feature2: {
         title: 'Caring for the ocean',
-        description: 'It begins with knowing it — you can’t protect what you don’t love, and you can’t love what you don’t know.'
+        description: 'Caring for the ocean is part of the adventure. Every dive helps protect this natural treasure.'
       },
       feature3: {
         title: 'Among colorful corals',
-        description: 'Discover the life below the surface that makes the Caribbean truly unique'
+        description: 'Among colorful corals and tropical fish, discover the life that makes the Caribbean so unique.'
       },
       feature4: {
         title: 'The magic is in the details',
-        description: 'Look, don’t touch, and let yourself be amazed by Cozumel'
+        description: 'The magic is in the details. Look, don\'t touch — and let yourself be amazed by marine life.'
       }
     },
     // Courses
@@ -93,7 +93,7 @@ export const translations = {
         description: 'The Advanced Open Water course helps you build confidence, improve your skills, and explore deeper, more exciting environments',
         flipButtonText: 'Next level',
         detailedDescription: 'Take your diving to the next level with a two-day experience designed for curious, confident explorers. You\'ll strengthen your skills, dive deeper, and enjoy a selection of specialty adventure dives that match your style and interests. With personal guidance and a smooth, comfortable pace, this course helps you explore more of the ocean with confidence, ease, and a sense of true adventure.',
-        duration: '2–3 days + self-paced online study',
+        duration: '2–3 days + online theory at your own pace',
         price: '$440 USD',
         medicalForm: '/medical form.pdf',
         requirements: [
@@ -123,7 +123,7 @@ export const translations = {
         description: 'Course designed to learn how to prevent problems and respond to emergencies underwater. It gives you more safety, confidence, and control in diving.',
         flipButtonText: 'Click Me',
         detailedDescription: 'This course teaches you to recognize, prevent, and manage problems in the water. You will learn self-rescue, how to assist other divers, and techniques to respond to real emergencies. It is challenging but very rewarding training that increases your safety, confidence, and ability to help others underwater.',
-        duration: '3 days',
+        duration: '2 days + EFR (Emergency First Response) + online theory at your own pace',
         price: '$490 USD',
         medicalForm: '/medical form.pdf',
         requirements: [
@@ -148,11 +148,11 @@ export const translations = {
         ]
       },
       refresherCourse: {
-        title: 'Refresher Course',
+        title: 'Refresher Dive',
         shortDescription: 'Review your skills and dive with confidence again.',
-        description: 'Haven\'t dived in a while? A refresher course helps you review essential skills and rebuild your confidence in a relaxed, supportive environment.',
+        description: 'Haven\'t dived in a while? A refresher dive helps you review essential skills and rebuild your confidence in a relaxed, supportive environment.',
         flipButtonText: 'Click Me',
-        detailedDescription: 'A smooth, stress-free session designed to rebuild your comfort underwater, review essential skills, and get you dive-ready again with total confidence.',
+        detailedDescription: 'A smooth, stress-free dive designed to rebuild your comfort underwater, review essential skills, and get you dive-ready again with total confidence.',
         duration: 'Half-day',
         price: '$180 USD',
         medicalForm: '/medical form.pdf',
@@ -183,7 +183,7 @@ export const translations = {
         description: 'Go snorkeling in Cozumel and drift over crystal-clear reefs and incredible marine life in a smooth, effortless experience — we take care of everything; you just enjoy.',
         flipButtonText: 'Click Me',
         detailedDescription: 'Experience the magic of Cozumel\'s underwater world without the need for diving certification. Our guided snorkel tours take you to the best shallow reef spots where you can float effortlessly over vibrant coral formations, colorful fish, sea turtles, and rays. Perfect for families, beginners, and anyone who wants to explore the Caribbean\'s crystal-clear waters. We provide all equipment and ensure a safe, fun experience for everyone.',
-        duration: '2-3 hours',
+        duration: '4-5 hours',
         price: '$70 USD',
         requirements: [
           'Basic swimming ability',
@@ -204,7 +204,7 @@ export const translations = {
           'See tropical fish, turtles, and rays',
           'Crystal-clear Caribbean waters',
           'Perfect for all ages',
-          'Small group experience',
+          'Soft drinks, beers, ceviche, and guacamole',          
           'Safety-focused professional guides'
         ]
       },
@@ -265,7 +265,8 @@ export const translations = {
           'Explore vibrant reefs and stunning walls',
           'World-class visibility',
           'Relaxed, personalized experience',
-          'Small group sizes'
+          'Small group sizes',
+          'Amenities included'
         ]
       },
       driftDive: {
@@ -279,6 +280,66 @@ export const translations = {
       reefCave: {
         title: 'Reef Cave Diving',
         description: 'Explore the mysterious underwater caves and caverns of Cozumel! Dive into stunning formations and hidden passages with our experienced cave diving guides.'
+      },
+      divePackages: {
+        title: 'Dive Packages',
+        shortDescription: 'Save more when you dive more. Choose the perfect package for your Cozumel adventure.',
+        description: 'Multi-dive packages designed for certified divers who want to explore Cozumel\'s underwater world at their own pace with maximum flexibility and value.',
+        flipButtonText: 'View packages',
+        detailedDescription: 'Our dive packages are designed to give you the freedom to explore Cozumel\'s world-class dive sites at your own pace. Each package includes private guide service, all equipment, and the flexibility to dive when it suits you best. The more you dive, the more you save — while enjoying personalized attention and a relaxed, unhurried experience throughout your stay.',
+        medicalForm: '/medical form.pdf',
+        requirements: [
+          'Valid diving certification (any agency)',
+          'Minimum age: 10 years old (Junior divers)',
+          'Good physical health'
+        ],
+        packages: [
+          {
+            name: '4 Dives Package',
+            price: '$290 USD',
+            description: 'Ideal for a short stay or a first diving experience in Cozumel. Enjoy relaxed dives with a personalized approach and private guide.',
+            dives: 4,
+            pricePerDive: '$72.50'
+          },
+          {
+            name: '6 Dives Package',
+            price: '$420 USD',
+            description: 'Perfect for divers who want to explore more sites at a comfortable pace while enjoying personalized attention and flexibility.',
+            dives: 6,
+            pricePerDive: '$70'
+          },
+          {
+            name: '8 Dives Package',
+            price: '$540 USD',
+            description: 'Designed for divers looking for a deeper experience, exploring a variety of dive sites with unhurried dives and a private guide.',
+            dives: 8,
+            pricePerDive: '$67.50'
+          },
+          {
+            name: '10 Dives Package',
+            price: '$660 USD',
+            description: 'Our most complete option. Ideal for passionate divers who want to fully experience Cozumel\'s underwater world with maximum flexibility and personalized service.',
+            dives: 10,
+            pricePerDive: '$66'
+          }
+        ],
+        includes: [
+          'Private dive guide for all dives',
+          'All required scuba equipment',
+          'Tanks & weights',
+          'Boat transportation to dive sites',
+          'Water & snacks on board',
+          'Marine park fees',
+          'Flexible scheduling throughout your stay',
+          'Personalized dive site selection'
+        ],
+        highlights: [
+          'Save up to 12% compared to individual dives',
+          'Maximum flexibility - dive at your own pace',
+          'Private guide for personalized experience',
+          'Explore multiple world-class dive sites',
+          'Valid throughout your stay in Cozumel'
+        ]
       }
     },
     // About
@@ -409,15 +470,15 @@ export const translations = {
       openWater: 'Curso Open Water',
       advancedCourse: 'Curso Avanzado',
       rescue: 'Curso de Rescate',
-      refresherCourse: 'Curso de Repaso',
+      refresherCourse: 'Buceo de Repaso',
       funDive: 'Fun Dive',
       divePackages: 'Paquetes de Buceo',
       snorkelTrips: 'Viajes de Snorkel'
     },
     // Hero
     hero: {
-      title: 'SUMÉRGETE EN LA AVENTURA',
-      subtitle: 'Instructor PADI, Guía privado & Tour de snorkel',
+      title: 'LA AVENTURA COMIENZA AQUí',
+      subtitle: 'Instructor, Guía privado & Tour de snorkel',
       cta: 'Buceemos'
     },
     // Features
@@ -425,19 +486,19 @@ export const translations = {
       mainTitle: 'DESCUBRE EL ARRECIFE MESOAMERICANO DE COZUMEL Y EXPLORA EL FASCINANTE MUNDO SUBMARINO',
       feature1: {
         title: 'Explora los arrecifes de Cozumel',
-        description: 'Un paraiso submarino con aguas cristalinas y formaciones de coral increibles'
+        description: 'Explora los arrecifes de Cozumel — un vibrante paraíso submarino dentro del Parque Marino protegido.'
       },
       feature2: {
         title: 'Cuidar el océano',
-        description: 'Empieza por conocerlo. No puedes proteger lo que no amas y no puedes amar lo que no conoces'
+        description: 'Cuidar el océano es parte de la aventura. Cada inmersión ayuda a proteger este tesoro natural.'
       },
       feature3: {
         title: 'Entre corales coloridos',
-        description: 'Descubre la espectacular vida marina que hace al caribe un lugar único en el mundo'
+        description: 'Entre corales coloridos y peces tropicales, descubre la vida que hace al Caribe tan único.'
       },
       feature4: {
         title: 'La magia está en los detalles',
-        description: 'Mira pero no toca. Déjate asombrar por Cozumel'
+        description: 'La magia está en los detalles. Mira, no toques — y déjate sorprender por la vida marina.'
       }
     },
     // Courses
@@ -452,12 +513,12 @@ export const translations = {
         specialty: 'Inmersiones Especializadas'
       },
       openWater: {
-        title: 'Open Water Course',
-        shortDescription: 'Aprende a bucear y convértete en un buceador certificado.',
+        title: 'Curso Open Water',
+        shortDescription: 'Aprende a bucear y conviértete en un buceador certificado.',
         description: '¡Obtén tu certificación! Aprende habilidades y técnicas esenciales de buceo para convertirte en un buceador certificado. Explora el mundo submarino con confianza y seguridad.',
         flipButtonText: 'Aprende a bucear',
-        detailedDescription: 'El curso Open Water Course es la certificación de buceo más popular del mundo. Este programa integral combina aprendizaje académico, entrenamiento en agua confinada e inmersiones en aguas abiertas para darte las habilidades y confianza necesarias para bucear de manera independiente con un compañero en cualquier parte del mundo.',
-        duration: '3 días',
+        detailedDescription: 'El Curso Open Water es la certificación de buceo más popular del mundo. Este programa integral combina aprendizaje académico, entrenamiento en agua confinada e inmersiones en aguas abiertas para darte las habilidades y confianza necesarias para bucear de manera independiente con un compañero en cualquier parte del mundo.',
+        duration: '3 días + teoría online a tu ritmo',
         price: '$490 USD',
         medicalForm: '/medical form.pdf',
         requirements: [
@@ -483,12 +544,12 @@ export const translations = {
         ]
       },
       advancedOpenWater: {
-        title: 'Advanced Open Water',
+        title: 'Curso Avanzado',
         shortDescription: 'Lleva tus habilidades al siguiente nivel.',
         description: '¡Lleva tus habilidades al siguiente nivel! Amplía tu conocimiento de buceo con inmersiones especializadas que incluyen buceo profundo, navegación y técnicas más avanzadas.',
         flipButtonText: 'Siguiente nivel',
-        detailedDescription: 'El curso PADI Advanced Open Water Course te ayuda a aumentar tu confianza y desarrollar tus habilidades de buceo para que te sientas más cómodo en el agua. Esta es una excelente manera de acumular más inmersiones mientras continúas aprendiendo bajo la supervisión de tu instructor PADI.',
-        duration: '2-3 días',
+        detailedDescription: 'Esta experiencia te ayuda a aumentar tu confianza y desarrollar tus habilidades de buceo para que te sientas más cómodo en el agua. Es una excelente manera de acumular más inmersiones mientras continúas aprendiendo bajo la supervisión de tu instructor.',
+        duration: '2-3 días + teoría online a tu ritmo',
         price: '$440 USD',
         medicalForm: '/medical form.pdf',
         requirements: [
@@ -497,12 +558,11 @@ export const translations = {
           'Buena salud física'
         ],
         includes: [
-          'Materiales PADI Advanced',
+          'E-Learning',
           'Todo el equipo de buceo',
           '5 inmersiones de aventura',
           'Inmersión profunda (hasta 30m/100ft)',
           'Inmersión de navegación submarina',
-          'Instructor profesional PADI',
           'Tarjeta de certificación digital'
         ],
         highlights: [
@@ -514,12 +574,12 @@ export const translations = {
         ]
       },
       rescueDiver: {
-        title: 'Rescue Course',
-        shortDescription: 'Convértete en un rescatista seguro y ayuda a otros.',
+        title: 'Curso de Rescate',
+        shortDescription: 'Conviértete en un rescatista seguro y ayuda a otros.',
         description: 'Curso diseñado para aprender a prevenir problemas y responder a emergencias bajo el agua. Te da más seguridad, confianza y control en el buceo.',
         flipButtonText: 'Aprende rescate',
         detailedDescription: 'Este curso te enseña a reconocer, prevenir y manejar problemas en el agua. Aprenderás auto-rescate, asistencia a otros buzos y técnicas para responder a emergencias reales. Es un entrenamiento desafiante pero muy gratificante, que aumenta tu seguridad, tu confianza y tu capacidad para ayudar a otros bajo el agua.',
-        duration: '3 días',
+        duration: '2 días + EFR (Primeros Auxilios y RCP) + teoría online a tu ritmo',
         price: '$490 USD',
         medicalForm: '/medical form.pdf',
         requirements: [
@@ -529,11 +589,10 @@ export const translations = {
           'Buena salud física'
         ],
         includes: [
-          'Materiales PADI Rescue Diver',
+          'E-Learning',
           'Todo el equipo de buceo',
           'Entrenamiento en técnicas de rescate',
           'Práctica de escenarios de emergencia',
-          'Instructor profesional PADI',
           'Tarjeta de certificación digital'
         ],
         highlights: [
@@ -545,11 +604,11 @@ export const translations = {
         ]
       },
       refresherCourse: {
-        title: 'Refresher Course',
+        title: 'Buceo de Repaso',
         shortDescription: 'Repasa tus habilidades y bucea con confianza nuevamente.',
-        description: '¿No has buceado en un tiempo? Un curso de repaso te ayuda a revisar habilidades esenciales y recuperar tu confianza en un ambiente relajado y de apoyo.',
+        description: '¿No has buceado en un tiempo? Un buceo de repaso te ayuda a revisar habilidades esenciales y recuperar tu confianza en un ambiente relajado y de apoyo.',
         flipButtonText: 'Refresca habilidades',
-        detailedDescription: 'Una sesión suave y sin estrés diseñada para recuperar tu comodidad bajo el agua, repasar habilidades esenciales y prepararte para bucear nuevamente con total confianza.',
+        detailedDescription: 'Un buceo suave y sin estrés diseñado para recuperar tu comodidad bajo el agua, repasar habilidades esenciales y prepararte para bucear nuevamente con total confianza.',
         duration: 'Medio día',
         price: '$180 USD',
         medicalForm: '/medical form.pdf',
@@ -564,14 +623,13 @@ export const translations = {
           'Práctica de habilidades en agua confinada',
           'Una o dos inmersiones en aguas abiertas',
           'Todo el equipo requerido',
-          'Coaching personal y guía',
-          'Tarjeta de finalización del curso de repaso'
         ],
         highlights: [
           'Repasa teoría de buceo y seguridad',
           'Practica habilidades esenciales',
           'Recupera confianza bajo el agua',
-          'Ritmo y atención personalizados'
+          'Ritmo y atención personalizados',
+          'Opcion de buceo en barco o desde la costa'
         ]
       },
       snorkeling: {
@@ -580,7 +638,7 @@ export const translations = {
         description: 'Haz snorkel en Cozumel y flota sobre arrecifes cristalinos e increíble vida marina en una experiencia suave y sin esfuerzo — nosotros nos encargamos de todo; tú solo disfruta.',
         flipButtonText: 'Reserva ahora',
         detailedDescription: 'Experimenta la magia del mundo submarino de Cozumel sin necesidad de certificación de buceo. Nuestros tours guiados de snorkel te llevan a los mejores puntos de arrecifes poco profundos donde puedes flotar sin esfuerzo sobre vibrantes formaciones de coral, peces coloridos, tortugas marinas y rayas. Perfecto para familias, principiantes y cualquiera que quiera explorar las aguas cristalinas del Caribe. Proporcionamos todo el equipo y aseguramos una experiencia segura y divertida para todos.',
-        duration: '2-3 horas',
+        duration: '4-5 horas',
         price: '$70 USD',
         requirements: [
           'Habilidad básica de natación',
@@ -601,16 +659,16 @@ export const translations = {
           'Observa peces tropicales, tortugas y rayas',
           'Aguas cristalinas del Caribe',
           'Perfecto para todas las edades',
-          'Experiencia en grupos pequeños',
+          'Refrescos cervezas, ceviche y guacamole',
           'Guías profesionales enfocados en seguridad'
         ]
       },
       discovery: {
-        title: 'Discover Scuba Diving',
+        title: 'Buceo de Bautismo',
         shortDescription: 'Tu primer paso al mundo submarino.',
         description: '¡Perfecto para principiantes! Experimenta la magia del buceo por primera vez con nuestros instructores profesionales guiándote en cada paso en las aguas cristalinas de Cozumel.',
         flipButtonText: 'Pruébalo ahora',
-        detailedDescription: 'Discover Scuba Diving es una introducción rápida y fácil a lo que se necesita para explorar el mundo submarino. Esta experiencia te da la oportunidad de probar el buceo por primera vez en una piscina y luego en el océano bajo la supervisión directa de un profesional PADI.',
+        detailedDescription: 'Buceo de Bautismo es una introducción rápida y fácil a lo que se necesita para explorar el mundo submarino. Esta experiencia te da la oportunidad de probar el buceo por primera vez en una piscina y luego en el océano bajo la supervisión directa de un profesional PADI.',
         duration: 'Medio día',
         price: '$180 USD',
         medicalForm: '/medical form.pdf',
@@ -678,6 +736,66 @@ export const translations = {
       reefCave: {
         title: 'Buceo en Cuevas',
         description: '¡Explora las misteriosas cuevas y cavernas submarinas de Cozumel! Sumérgete en formaciones impresionantes y pasajes ocultos con nuestros guías experimentados de buceo en cuevas.'
+      },
+      divePackages: {
+        title: 'Paquetes de Buceo',
+        shortDescription: 'Ahorra más cuando buceas más. Elige el paquete perfecto para tu aventura en Cozumel.',
+        description: 'Paquetes de múltiples inmersiones diseñados para buceadores certificados que quieren explorar el mundo submarino de Cozumel a su propio ritmo con máxima flexibilidad y valor.',
+        flipButtonText: 'Ver paquetes',
+        detailedDescription: 'Nuestros paquetes de buceo están diseñados para darte la libertad de explorar los sitios de buceo de clase mundial de Cozumel a tu propio ritmo. Cada paquete incluye servicio de guía privado, todo el equipo y la flexibilidad de bucear cuando mejor te convenga. Cuanto más buceas, más ahorras — mientras disfrutas de atención personalizada y una experiencia relajada y sin prisas durante toda tu estadía.',
+        medicalForm: '/medical form.pdf',
+        requirements: [
+          'Certificación de buceo válida (cualquier agencia)',
+          'Edad mínima: 10 años (buceadores junior)',
+          'Buena salud física'
+        ],
+        packages: [
+          {
+            name: 'Paquete de 4 Inmersiones',
+            price: '$290 USD',
+            description: 'Ideal para una estadía corta o una primera experiencia de buceo en Cozumel. Disfruta de inmersiones relajadas con un enfoque personalizado y guía privado.',
+            dives: 4,
+            pricePerDive: '$72.50'
+          },
+          {
+            name: 'Paquete de 6 Inmersiones',
+            price: '$420 USD',
+            description: 'Perfecto para buceadores que quieren explorar más sitios a un ritmo cómodo mientras disfrutan de atención personalizada y flexibilidad.',
+            dives: 6,
+            pricePerDive: '$70'
+          },
+          {
+            name: 'Paquete de 8 Inmersiones',
+            price: '$540 USD',
+            description: 'Diseñado para buceadores que buscan una experiencia más profunda, explorando una variedad de sitios de buceo con inmersiones sin prisas y guía privado.',
+            dives: 8,
+            pricePerDive: '$67.50'
+          },
+          {
+            name: 'Paquete de 10 Inmersiones',
+            price: '$660 USD',
+            description: 'Nuestra opción más completa. Ideal para buceadores apasionados que quieren experimentar completamente el mundo submarino de Cozumel con máxima flexibilidad y servicio personalizado.',
+            dives: 10,
+            pricePerDive: '$66'
+          }
+        ],
+        includes: [
+          'Guía privado de buceo para todas las inmersiones',
+          'Todo el equipo de buceo requerido',
+          'Tanques y plomos',
+          'Transporte en barco a los sitios de buceo',
+          'Agua y snacks a bordo',
+          'Tarifas del parque marino',
+          'Programación flexible durante tu estadía',
+          'Selección personalizada de sitios de buceo'
+        ],
+        highlights: [
+          'Ahorra hasta 12% comparado con inmersiones individuales',
+          'Máxima flexibilidad - bucea a tu propio ritmo',
+          'Guía privado para experiencia personalizada',
+          'Explora múltiples sitios de buceo de clase mundial',
+          'Válido durante toda tu estadía en Cozumel'
+        ]
       }
     },
     // About

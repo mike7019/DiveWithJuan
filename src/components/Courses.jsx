@@ -65,7 +65,7 @@ const Courses = () => {
     {
       id: 6,
       title: t.refresherCourse.title,
-      image: `${baseUrl}images-courses/reef cave diver.jpg`,
+      image: `${baseUrl}images-courses/reef cave diver.jpg.jpeg`,
       shortDescription: t.refresherCourse.shortDescription,
       description: t.refresherCourse.description,
       detailedDescription: t.refresherCourse.detailedDescription,

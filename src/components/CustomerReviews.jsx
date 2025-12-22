@@ -10,30 +10,30 @@ const CustomerReviews = () => {
   const [reviews] = useState([
     {
       id: 1,
-      name: 'Sarah Johnson',
-      country: 'USA',
+      name: 'Kevin Galarcio',
+      country: 'Colombia',
       rating: 5,
-      date: '2024-11-15',
-      text: 'Amazing experience with Juan! He made us feel safe and showed us the most beautiful parts of the reef. Highly recommended!',
-      textEs: '¡Experiencia increíble con Juan! Nos hizo sentir seguros y nos mostró las partes más hermosas del arrecife. ¡Muy recomendado!'
+      date: '2025-11-16',
+      text: 'Very professional, with the best energy and attitude throughout. An excellent experience!',
+      textEs: '¡Muy profesional, la mejor energía y actitud en todo. Excelente experiencia!'
     },
     {
       id: 2,
-      name: 'Michael Schmidt',
-      country: 'Germany',
+      name: 'Julian Oti',
+      country: 'Argentina',
       rating: 5,
-      date: '2024-11-10',
-      text: 'Professional instructor, amazing dive sites. Juan knows every corner of Cozumel\'s reefs. Best diving experience ever!',
-      textEs: 'Instructor profesional, sitios de buceo increíbles. Juan conoce cada rincón de los arrecifes de Cozumel. ¡La mejor experiencia de buceo!'
+      date: '2025-12-13',
+      text: 'An unforgettable experience. Juan taught us so much and was attentive at all times. 100% recommended!',
+      textEs: 'Experiencia inolvidable, Juan nos enseñó muchísimo y estuvo pendiente siempre. Recomendable 100%!'
     },
     {
       id: 3,
       name: 'Emma Laurent',
-      country: 'France',
+      country: 'USA',
       rating: 5,
-      date: '2024-11-05',
-      text: 'Juan is an excellent guide! Very patient with beginners and knowledgeable about marine life. Can\'t wait to come back!',
-      textEs: '¡Juan es un guía excelente! Muy paciente con principiantes y conocedor de la vida marina. ¡No puedo esperar para volver!'
+      date: '2025-10-21',
+      text: 'I had an unforgettable experience. Juan taught us a lot, was attentive the whole time, and showed us all kinds of fish, even nudibranchs. Highly recommended.!',
+      textEs: '¡Tuve una experiencia inolvidable. Juan nos enseñó muchísimo, estuvo atento todo el tiempo y nos mostró todo tipo de peces, incluso nudibranquios. Súper recomendable!'
     }
   ]);
 
