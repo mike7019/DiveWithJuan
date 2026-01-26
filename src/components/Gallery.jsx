@@ -11,26 +11,12 @@ const Gallery = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const imagesPerPage = 8;
-  const baseUrl = import.meta.env.BASE_URL;
 
-  const images = [
-    `${baseUrl}images-gallery/pexels-2157297739-34651171.jpg`,
-    `${baseUrl}images-gallery/pexels-chris-spain-1559126760-27758100.jpg`,
-    `${baseUrl}images-gallery/pexels-chris-spain-1559126760-27758117.jpg`,
-    `${baseUrl}images-gallery/pexels-christian-vergara-19046939-11634173.jpg`,
-    `${baseUrl}images-gallery/pexels-domingo-dias-260502921-12640290.jpg`,
-    `${baseUrl}images-gallery/pexels-domingo-dias-260502921-12678039.jpg`,
-    `${baseUrl}images-gallery/pexels-harvey-clements-13141095-15288622.jpg`,
-    `${baseUrl}images-gallery/pexels-harvey-clements-13141095-15288627.jpg`,
-    `${baseUrl}images-gallery/pexels-harvey-clements-13141095-15463396.jpg`,
-    `${baseUrl}images-gallery/pexels-james-lee-932763-4606063.jpg`,
-    `${baseUrl}images-gallery/pexels-james-lee-932763-4606064.jpg`,
-    `${baseUrl}images-gallery/pexels-mati-11481752.jpg`,
-    `${baseUrl}images-gallery/pexels-mati-11481753.jpg`,
-    `${baseUrl}images-gallery/pexels-mati-11481772.jpg`,
-    `${baseUrl}images-gallery/pexels-oscar-garcia-medina-241846767-12302978.jpg`,
-    `${baseUrl}images-gallery/pexels-oscar-garcia-medina-241846767-12302979.jpg`
-  ];
+  // Cargar dinámicamente todas las imágenes de la carpeta assets/images-gallery
+  const imageModules = import.meta.glob('../assets/images-gallery/*.{jpg,jpeg,png,gif,webp}', { eager: true });
+  const images = Object.keys(imageModules)
+    .map(path => imageModules[path].default)
+    .sort(); // Ordenar alfabéticamente
 
   const totalPages = Math.ceil(images.length / imagesPerPage);
   const startIndex = currentPage * imagesPerPage;

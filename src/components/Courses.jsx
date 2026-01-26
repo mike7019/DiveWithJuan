@@ -15,7 +15,7 @@ const Courses = () => {
     {
       id: 1,
       title: t.discovery.title,
-      image: `${baseUrl}images-courses/discover-scuba-diving.jpg`,
+      image: `${baseUrl}images-courses/discover-scuba-diving.jpeg`,
       shortDescription: t.discovery.shortDescription,
       description: t.discovery.description,
       detailedDescription: t.discovery.detailedDescription,
@@ -45,7 +45,7 @@ const Courses = () => {
     {
       id: 4,
       title: t.funDive.title,
-      image: `${baseUrl}images-courses/FOTO PARA FUNDIVE.jpg`,
+      image: `${baseUrl}images-courses/FOTO PARA FUNDIVE.jpeg`,
       shortDescription: t.funDive.shortDescription,
       description: t.funDive.description,
       detailedDescription: t.funDive.detailedDescription,
@@ -55,7 +55,7 @@ const Courses = () => {
     {
       id: 5,
       title: t.rescueDiver.title,
-      image: `${baseUrl}images-courses/rescue diver.jpg`,
+      image: `${baseUrl}images-courses/rescue diver.jpeg`,
       shortDescription: t.rescueDiver.shortDescription,
       description: t.rescueDiver.description,
       detailedDescription: t.rescueDiver.detailedDescription,
@@ -106,7 +106,7 @@ const Courses = () => {
               <div className="course-card-inner">
                 {/* Front of card */}
                 <div className="course-card-front">
-                  <div className="course-image">
+                  <div className={`course-image ${course.slug === 'rescue' ? 'rescue-course' : ''}`}>
                     <img src={course.image} alt={course.title} />
                   </div>
                   <div className="course-content">

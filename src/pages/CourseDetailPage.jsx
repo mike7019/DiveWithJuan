@@ -27,15 +27,15 @@ const CourseDetailPage = () => {
     },
     'discovery': {
       key: 'discovery',
-      image: `${baseUrl}images-courses/discover-scuba-diving.jpg`
+      image: `${baseUrl}images-courses/discover-scuba-diving.jpeg`
     },
     'fun-dive': {
       key: 'funDive',
-      image: `${baseUrl}images-courses/FOTO PARA FUNDIVE.jpg`
+      image: `${baseUrl}images-courses/FOTO PARA FUNDIVE.jpeg`
     },
     'rescue': {
       key: 'rescueDiver',
-      image: `${baseUrl}images-courses/rescue diver.jpg`
+      image: `${baseUrl}images-courses/rescue diver.jpeg`
     },
     'refresher': {
       key: 'refresherCourse',
@@ -43,11 +43,11 @@ const CourseDetailPage = () => {
     },
     'snorkel-trips': {
       key: 'snorkeling',
-      image: `${baseUrl}images-courses/FOTO PARA FUNDIVE.jpg`
+      image: `${baseUrl}images-courses/imagen para snorkel.jpeg`
     },
     'dive-packages': {
       key: 'divePackages',
-      image: `${baseUrl}images-courses/FOTO PARA FUNDIVE.jpg`,
+      image: `${baseUrl}images-courses/imagen para dive packages.jpeg`,
       isPackage: true
     }
   };
@@ -90,7 +90,7 @@ const CourseDetailPage = () => {
 
         <main className="course-detail-main">
           <div className="course-detail-hero">
-            <div className="course-detail-hero-image">
+            <div className={`course-detail-hero-image ${courseId === 'fun-dive' ? 'fun-dive-hero' : ''} ${courseId === 'rescue' ? 'rescue-hero' : ''} ${courseId === 'dive-packages' ? 'dive-packages-hero' : ''}`}>
               <img src={courseData.image} alt={course.title} />
             </div>
             <div className="course-detail-hero-content">
@@ -165,7 +165,7 @@ const CourseDetailPage = () => {
                             <span className="list-icon">•</span>
                             {language === 'en' ? 'Read it to see if you\'re fit for dive: ' : 'Verifica si eres apto: '}
                             <a
-                              href={`${baseUrl}medical%20form.pdf`}
+                              href={`${baseUrl}${course.medicalForm.substring(1)}`}
                               target="_blank"
                               rel="noopener noreferrer"
                               style={{ color: '#2196F3', textDecoration: 'underline' }}

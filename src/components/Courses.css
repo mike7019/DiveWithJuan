@@ -220,6 +220,10 @@
   transition: transform 0.8s cubic-bezier(0.4, 0.0, 0.2, 1);
 }
 
+.rescue-course img {
+  object-position: center 40%;
+}
+
 .course-card-container:hover .course-image img {
   transform: scale(1.15);
 }

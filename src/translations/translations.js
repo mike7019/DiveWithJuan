@@ -22,7 +22,7 @@ export const translations = {
     // Hero
     hero: {
       title: 'DIVE INTO ADVENTURE',
-      subtitle: 'PADI instructor, Private guide & Snorkel tour',
+      subtitle: 'SCUBA instructor, Private guide & Snorkel tour',
       cta: 'Let\'s Dive'
     },
     // Features
@@ -30,19 +30,19 @@ export const translations = {
       mainTitle: 'DISCOVER COZUMEL\'S MESOAMERICAN REEF AND EXPLORE UNDERWATER FASCINATING WORLD',
       feature1: {
         title: 'Explore Cozumel\'s reefs',
-        description: 'Explore Cozumel\'s reefs — a vibrant underwater paradise within the protected Marine Park.'
+        description: 'A spectacular underwater paradise filled with crystal-clear water and vibrant coral formations.'
       },
       feature2: {
         title: 'Caring for the ocean',
-        description: 'Caring for the ocean is part of the adventure. Every dive helps protect this natural treasure.'
+        description: 'It begins with knowing it — you can’t protect what you don’t love, and you can’t love what you don’t know.'
       },
       feature3: {
         title: 'Among colorful corals',
-        description: 'Among colorful corals and tropical fish, discover the life that makes the Caribbean so unique.'
+        description: 'Discover the life below the surface that makes the Caribbean truly unique.'
       },
       feature4: {
         title: 'The magic is in the details',
-        description: 'The magic is in the details. Look, don\'t touch — and let yourself be amazed by marine life.'
+        description: 'Look, don’t touch, and let yourself be amazed by Cozumel.'
       }
     },
     // Courses
@@ -486,19 +486,19 @@ export const translations = {
       mainTitle: 'DESCUBRE EL ARRECIFE MESOAMERICANO DE COZUMEL Y EXPLORA EL FASCINANTE MUNDO SUBMARINO',
       feature1: {
         title: 'Explora los arrecifes de Cozumel',
-        description: 'Explora los arrecifes de Cozumel — un vibrante paraíso submarino dentro del Parque Marino protegido.'
+        description: 'un paraiso submarino con aguas cristalinas y formaciones de coral increibles'
       },
       feature2: {
         title: 'Cuidar el océano',
-        description: 'Cuidar el océano es parte de la aventura. Cada inmersión ayuda a proteger este tesoro natural.'
+        description: 'Empieza por conocerlo. No puedes proteger lo que no amas y no puedes amar lo que no conoces'
       },
       feature3: {
         title: 'Entre corales coloridos',
-        description: 'Entre corales coloridos y peces tropicales, descubre la vida que hace al Caribe tan único.'
+        description: 'Descubre la espectacular vida marina que hace al caribe un lugar único en el mundo.'
       },
       feature4: {
         title: 'La magia está en los detalles',
-        description: 'La magia está en los detalles. Mira, no toques — y déjate sorprender por la vida marina.'
+        description: 'Mira pero no toques. Déjate asombrar por Cozumel.'
       }
     },
     // Courses
@@ -520,7 +520,7 @@ export const translations = {
         detailedDescription: 'El Curso Open Water es la certificación de buceo más popular del mundo. Este programa integral combina aprendizaje académico, entrenamiento en agua confinada e inmersiones en aguas abiertas para darte las habilidades y confianza necesarias para bucear de manera independiente con un compañero en cualquier parte del mundo.',
         duration: '3 días + teoría online a tu ritmo',
         price: '$490 USD',
-        medicalForm: '/medical form.pdf',
+        medicalForm: '/certificado medico.pdf',
         requirements: [
           'Edad mínima: 10 años',
           'Habilidades básicas de natación',
@@ -551,7 +551,7 @@ export const translations = {
         detailedDescription: 'Esta experiencia te ayuda a aumentar tu confianza y desarrollar tus habilidades de buceo para que te sientas más cómodo en el agua. Es una excelente manera de acumular más inmersiones mientras continúas aprendiendo bajo la supervisión de tu instructor.',
         duration: '2-3 días + teoría online a tu ritmo',
         price: '$440 USD',
-        medicalForm: '/medical form.pdf',
+        medicalForm: '/certificado medico.pdf',
         requirements: [
           'Certificación Open Water Course (o equivalente)',
           'Edad mínima: 12 años',
@@ -581,7 +581,7 @@ export const translations = {
         detailedDescription: 'Este curso te enseña a reconocer, prevenir y manejar problemas en el agua. Aprenderás auto-rescate, asistencia a otros buzos y técnicas para responder a emergencias reales. Es un entrenamiento desafiante pero muy gratificante, que aumenta tu seguridad, tu confianza y tu capacidad para ayudar a otros bajo el agua.',
         duration: '2 días + EFR (Primeros Auxilios y RCP) + teoría online a tu ritmo',
         price: '$490 USD',
-        medicalForm: '/medical form.pdf',
+        medicalForm: '/certificado medico.pdf',
         requirements: [
           'Advanced Open Water Course (o equivalente)',
           'Certificación Emergency First Response (o equivalente)',
@@ -611,7 +611,7 @@ export const translations = {
         detailedDescription: 'Un buceo suave y sin estrés diseñado para recuperar tu comodidad bajo el agua, repasar habilidades esenciales y prepararte para bucear nuevamente con total confianza.',
         duration: 'Medio día',
         price: '$180 USD',
-        medicalForm: '/medical form.pdf',
+        medicalForm: '/certificado medico.pdf',
         requirements: [
           'Certificación de buceo válida de cualquier agencia',
           'Sin límite de tiempo desde la última inmersión',
@@ -671,7 +671,7 @@ export const translations = {
         detailedDescription: 'Buceo de Bautismo es una introducción rápida y fácil a lo que se necesita para explorar el mundo submarino. Esta experiencia te da la oportunidad de probar el buceo por primera vez en una piscina y luego en el océano bajo la supervisión directa de un profesional PADI.',
         duration: 'Medio día',
         price: '$180 USD',
-        medicalForm: '/medical form.pdf',
+        medicalForm: '/certificado medico.pdf',
         requirements: [
           'Edad mínima: 10 años',
           'Habilidades básicas de natación',
@@ -701,7 +701,7 @@ export const translations = {
         detailedDescription: 'Únete a nosotros para inmersiones recreativas guiadas para explorar los arrecifes mundialmente famosos de Cozumel. Como buceador certificado, tendrás la oportunidad de bucear en algunos de los mejores sitios del Caribe, conocidos por sus aguas cristalinas, formaciones de coral vibrantes y abundante vida marina.',
         duration: 'Opciones de medio día a día completo',
         price: '$150 USD',
-        medicalForm: '/medical form.pdf',
+        medicalForm: '/certificado medico.pdf',
         requirements: [
           'Certificación de buceo válida (cualquier agencia)',
           'Edad mínima: 10 años (buceadores junior)',
@@ -743,7 +743,7 @@ export const translations = {
         description: 'Paquetes de múltiples inmersiones diseñados para buceadores certificados que quieren explorar el mundo submarino de Cozumel a su propio ritmo con máxima flexibilidad y valor.',
         flipButtonText: 'Ver paquetes',
         detailedDescription: 'Nuestros paquetes de buceo están diseñados para darte la libertad de explorar los sitios de buceo de clase mundial de Cozumel a tu propio ritmo. Cada paquete incluye servicio de guía privado, todo el equipo y la flexibilidad de bucear cuando mejor te convenga. Cuanto más buceas, más ahorras — mientras disfrutas de atención personalizada y una experiencia relajada y sin prisas durante toda tu estadía.',
-        medicalForm: '/medical form.pdf',
+        medicalForm: '/certificado medico.pdf',
         requirements: [
           'Certificación de buceo válida (cualquier agencia)',
           'Edad mínima: 10 años (buceadores junior)',

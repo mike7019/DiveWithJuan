@@ -55,6 +55,18 @@
   -webkit-transform: translateZ(0) scale(0.95, 0.95);
 }
 
+.fun-dive-hero img {
+  object-position: center 30%;
+}
+
+.rescue-hero img {
+  object-position: center 35%;
+}
+
+.dive-packages-hero img {
+  object-position: center 55%;
+}
+
 .course-detail-hero-content {
   position: relative;
   z-index: 3;
