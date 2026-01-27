@@ -2,6 +2,7 @@ import React from 'react';
 import { FaChevronDown } from 'react-icons/fa';
 import { useLanguage } from '../context/useLanguage';
 import { translations } from '../translations/translations';
+import heroMobileImage from '../assets/images-gallery/pexels-harvey-clements-13141095-15288622.jpg';
 import './Hero.css';
 
 const Hero = () => {
@@ -21,7 +22,7 @@ const Hero = () => {
       <div
         className="video-background"
         aria-hidden="true"
-        style={{ backgroundImage: `url(${baseUrl}images-gallery/pexels-harvey-clements-13141095-15288622.jpg)` }}
+        style={{ backgroundImage: `url(${heroMobileImage})` }}
       >
         <video
           autoPlay
@@ -29,7 +30,7 @@ const Hero = () => {
           muted
           playsInline
           aria-label="Background video of diving in Cozumel"
-          poster={`${baseUrl}images-gallery/pexels-harvey-clements-13141095-15288622.jpg`}
+          poster={heroMobileImage}
         >
           <source src={`${baseUrl}videos/juan-hero.mp4`} type="video/mp4" />
         </video>

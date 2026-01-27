@@ -24,14 +24,14 @@
 
 .course-detail-hero {
   position: relative;
-  height: 100vh;
-  min-height: 500px;
-  max-height: 700px;
+  height: 60vh;
+  min-height: 400px;
+  max-height: 600px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  margin-bottom: 60px;
+  margin-bottom: 0;
 }
 
 .course-detail-hero-image {
@@ -48,11 +48,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center 40%;
-  image-rendering: -webkit-optimize-contrast;
-  image-rendering: high-quality;
-  image-rendering: crisp-edges;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform: translateZ(0) scale(0.95, 0.95);
+  display: block;
 }
 
 .fun-dive-hero img {
@@ -105,6 +101,7 @@
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   padding: 60px 0 80px;
   min-height: 50vh;
+  margin-top: 0;
 }
 
 .course-detail-grid {
@@ -435,9 +432,9 @@
   }
 
   .course-detail-hero {
-    height: 45vh;
+    height: 40vh;
     min-height: 350px;
-    max-height: 400px;
+    max-height: 450px;
   }
 
   .course-detail-title {
@@ -473,17 +470,19 @@
 
 @media (max-width: 480px) {
   .course-detail-hero {
-    height: 40vh;
+    height: 35vh;
     min-height: 300px;
     max-height: 350px;
   }
 
   .course-detail-title {
     font-size: 24px;
+    padding: 0 15px;
   }
 
   .course-detail-description {
     font-size: 14px;
+    padding: 0 15px;
   }
 
   .detail-section h2 {

@@ -134,8 +134,17 @@
 }
 
 @media (max-width: 768px) {
+  .hero .video-background {
+    background-size: cover;
+    background-position: center;
+  }
+
   .hero .video-background video {
     display: none;
+  }
+
+  .hero .video-background::after {
+    background: rgba(0, 0, 0, 0.2);
   }
 
   .hero-subtitle {
