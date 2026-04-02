@@ -61,9 +61,9 @@ export const translations = {
         shortDescription: 'Learn to dive and become a certified diver.',
         description: 'The Open Water course teaches you the fundamentals of scuba diving, essential skills, and includes your first ocean dives',
         flipButtonText: 'Learn to dive',
-        detailedDescription: 'The Open Water course is a three-day experience designed to give you the confidence, skills, and freedom to dive anywhere in the world. Throughout the course, we include all equipment, transportation, daily meals, and everything you need to feel comfortable and supported from start to finish. The schedule may vary slightly, but in general each day runs between 6 and 8 hours, keeping the experience focused yet unhurried. A personalized, fully guided path to becoming a certified diver — safe, calm, and unforgettable.',
+        detailedDescription: 'The Open Water course is a three-day experience designed to give you the confidence, skills, and freedom to dive anywhere in the world. Throughout the course, we include all equipment, light amenities, and everything you need to feel comfortable and supported from start to finish. The schedule may vary slightly, but in general each day runs between 6 and 8 hours, keeping the experience focused yet unhurried. A personalized, fully guided path to becoming a certified diver — safe, calm, and unforgettable.',
         duration: '3 days + online theory at your own pace',
-        price: '$490 USD',
+        price: 'MXN 10,000',
         medicalForm: '/medical form.pdf',
         requirements: [
           'Minimum age: 10 years old',
@@ -94,7 +94,7 @@ export const translations = {
         flipButtonText: 'Next level',
         detailedDescription: 'Take your diving to the next level with a two-day experience designed for curious, confident explorers. You\'ll strengthen your skills, dive deeper, and enjoy a selection of specialty adventure dives that match your style and interests. With personal guidance and a smooth, comfortable pace, this course helps you explore more of the ocean with confidence, ease, and a sense of true adventure.',
         duration: '2–3 days + online theory at your own pace',
-        price: '$440 USD',
+        price: 'MXN 9,500',
         medicalForm: '/medical form.pdf',
         requirements: [
           'Open Water certification (or equivalent)',
@@ -124,7 +124,7 @@ export const translations = {
         flipButtonText: 'Click Me',
         detailedDescription: 'This course teaches you to recognize, prevent, and manage problems in the water. You will learn self-rescue, how to assist other divers, and techniques to respond to real emergencies. It is challenging but very rewarding training that increases your safety, confidence, and ability to help others underwater.',
         duration: '2 days + EFR (Emergency First Response) + online theory at your own pace',
-        price: '$490 USD',
+        price: 'MXN 10,000',
         medicalForm: '/medical form.pdf',
         requirements: [
           'Advanced Open Water Course (or equivalent)',
@@ -137,7 +137,6 @@ export const translations = {
           'All diving equipment',
           'Rescue skills training',
           'Emergency scenario practice',
-          'Professional PADI instructor',
           'Digital certification card'
         ],
         highlights: [
@@ -154,7 +153,7 @@ export const translations = {
         flipButtonText: 'Click Me',
         detailedDescription: 'A smooth, stress-free dive designed to rebuild your comfort underwater, review essential skills, and get you dive-ready again with total confidence.',
         duration: 'Half-day',
-        price: '$180 USD',
+        price: 'MXN 2,500',
         medicalForm: '/medical form.pdf',
         requirements: [
           'Valid diving certification from any agency',
@@ -166,9 +165,7 @@ export const translations = {
           'Knowledge review session',
           'Confined water skills practice',
           'One or two open water dives',
-          'All required equipment',
-          'Personal coaching and guidance',
-          'Refresher completion card'
+          'All required equipment'
         ],
         highlights: [
           'Review dive theory and safety',
@@ -184,7 +181,7 @@ export const translations = {
         flipButtonText: 'Click Me',
         detailedDescription: 'Experience the magic of Cozumel\'s underwater world without the need for diving certification. Our guided snorkel tours take you to the best shallow reef spots where you can float effortlessly over vibrant coral formations, colorful fish, sea turtles, and rays. Perfect for families, beginners, and anyone who wants to explore the Caribbean\'s crystal-clear waters. We provide all equipment and ensure a safe, fun experience for everyone.',
         duration: '4-5 hours',
-        price: '$70 USD',
+        price: 'MXN 1,400',
         requirements: [
           'Basic swimming ability',
           'Minimum age: 6 years old',
@@ -214,8 +211,8 @@ export const translations = {
         description: 'Learn a few simple skills and enjoy a guided ocean dive in a safe, fun, and relaxed way. No certification required — just curiosity and the desire to explore.',
         flipButtonText: 'Try it now',
         detailedDescription: 'Discover scuba diving with a relaxed, personalized experience designed for first-time divers. You\'ll start with a short briefing and practice a few basic underwater skills at your own pace. After that, enjoy two guided dives—either from shore or by boat, depending on what you prefer—exploring Cozumel\'s vibrant marine life. The full experience takes approximately 6 to 8 hours, giving you plenty of time to learn, enjoy, and feel fully confident in the water.',
-        duration: 'Half-day (6-8 hours)',
-        price: '$180 USD',
+        duration: 'Half-day',
+        price: 'MXN 1,500 or MXN 3,500',
         medicalForm: '/medical form.pdf',
         requirements: [
           'Minimum age: 10 years old',
@@ -245,7 +242,7 @@ export const translations = {
         flipButtonText: 'Let\'s dive',
         detailedDescription: 'Enjoy two guided dives exploring Cozumel\'s vibrant reefs, drifting along stunning walls, and experiencing the island\'s world-class visibility. Perfect for certified divers looking for a relaxed, unforgettable underwater adventure.',
         duration: 'Half-day',
-        price: '$150 USD',
+        price: 'MXN 2,500',
         medicalForm: '/medical form.pdf',
         requirements: [
           'Valid diving certification (any agency)',
@@ -265,7 +262,7 @@ export const translations = {
           'Explore vibrant reefs and stunning walls',
           'World-class visibility',
           'Relaxed, personalized experience',
-          'Small group sizes',
+          'Special price for groups',
           'Amenities included'
         ]
       },
@@ -296,36 +293,35 @@ export const translations = {
         packages: [
           {
             name: '4 Dives Package',
-            price: '$290 USD',
+            price: 'MXN 4,800',
             description: 'Ideal for a short stay or a first diving experience in Cozumel. Enjoy relaxed dives with a personalized approach and private guide.',
             dives: 4,
-            pricePerDive: '$72.50'
+            pricePerDive: 'MXN 1,200'
           },
           {
             name: '6 Dives Package',
-            price: '$420 USD',
+            price: 'MXN 6,800',
             description: 'Perfect for divers who want to explore more sites at a comfortable pace while enjoying personalized attention and flexibility.',
             dives: 6,
-            pricePerDive: '$70'
+            pricePerDive: 'MXN 1,133.33'
           },
           {
             name: '8 Dives Package',
-            price: '$540 USD',
+            price: 'MXN 8,800',
             description: 'Designed for divers looking for a deeper experience, exploring a variety of dive sites with unhurried dives and a private guide.',
             dives: 8,
-            pricePerDive: '$67.50'
+            pricePerDive: 'MXN 1,100'
           },
           {
             name: '10 Dives Package',
-            price: '$660 USD',
+            price: 'MXN 10,500',
             description: 'Our most complete option. Ideal for passionate divers who want to fully experience Cozumel\'s underwater world with maximum flexibility and personalized service.',
             dives: 10,
-            pricePerDive: '$66'
+            pricePerDive: 'MXN 1,050'
           }
         ],
         includes: [
           'Private dive guide for all dives',
-          'All required scuba equipment',
           'Tanks & weights',
           'Boat transportation to dive sites',
           'Water & snacks on board',
@@ -519,7 +515,7 @@ export const translations = {
         flipButtonText: 'Aprende a bucear',
         detailedDescription: 'El Curso Open Water es la certificación de buceo más popular del mundo. Este programa integral combina aprendizaje académico, entrenamiento en agua confinada e inmersiones en aguas abiertas para darte las habilidades y confianza necesarias para bucear de manera independiente con un compañero en cualquier parte del mundo.',
         duration: '3 días + teoría online a tu ritmo',
-        price: '$490 USD',
+        price: 'MXN 10,000',
         medicalForm: '/certificado medico.pdf',
         requirements: [
           'Edad mínima: 10 años',
@@ -531,7 +527,7 @@ export const translations = {
           'Materiales de certificación PADI',
           'Todo el equipo de buceo',
           '4 inmersiones en aguas abiertas',
-          'Sesiones de entrenamiento en piscina',
+          'Sesiones de entrenamiento en aguas confinadas',
           'Instructor profesional PADI',
           'Tarjeta de certificación digital'
         ],
@@ -550,10 +546,10 @@ export const translations = {
         flipButtonText: 'Siguiente nivel',
         detailedDescription: 'Esta experiencia te ayuda a aumentar tu confianza y desarrollar tus habilidades de buceo para que te sientas más cómodo en el agua. Es una excelente manera de acumular más inmersiones mientras continúas aprendiendo bajo la supervisión de tu instructor.',
         duration: '2-3 días + teoría online a tu ritmo',
-        price: '$440 USD',
+        price: 'MXN 9,500',
         medicalForm: '/certificado medico.pdf',
         requirements: [
-          'Certificación Open Water Course (o equivalente)',
+          'Certificación Open Water (o equivalente)',
           'Edad mínima: 12 años',
           'Buena salud física'
         ],
@@ -580,10 +576,10 @@ export const translations = {
         flipButtonText: 'Aprende rescate',
         detailedDescription: 'Este curso te enseña a reconocer, prevenir y manejar problemas en el agua. Aprenderás auto-rescate, asistencia a otros buzos y técnicas para responder a emergencias reales. Es un entrenamiento desafiante pero muy gratificante, que aumenta tu seguridad, tu confianza y tu capacidad para ayudar a otros bajo el agua.',
         duration: '2 días + EFR (Primeros Auxilios y RCP) + teoría online a tu ritmo',
-        price: '$490 USD',
+        price: 'MXN 10,000',
         medicalForm: '/certificado medico.pdf',
         requirements: [
-          'Advanced Open Water Course (o equivalente)',
+          'Advanced Open Water (o equivalente)',
           'Certificación Emergency First Response (o equivalente)',
           'Edad mínima: 12 años',
           'Buena salud física'
@@ -610,7 +606,7 @@ export const translations = {
         flipButtonText: 'Refresca habilidades',
         detailedDescription: 'Un buceo suave y sin estrés diseñado para recuperar tu comodidad bajo el agua, repasar habilidades esenciales y prepararte para bucear nuevamente con total confianza.',
         duration: 'Medio día',
-        price: '$180 USD',
+        price: 'MXN 2,500',
         medicalForm: '/certificado medico.pdf',
         requirements: [
           'Certificación de buceo válida de cualquier agencia',
@@ -639,7 +635,7 @@ export const translations = {
         flipButtonText: 'Reserva ahora',
         detailedDescription: 'Experimenta la magia del mundo submarino de Cozumel sin necesidad de certificación de buceo. Nuestros tours guiados de snorkel te llevan a los mejores puntos de arrecifes poco profundos donde puedes flotar sin esfuerzo sobre vibrantes formaciones de coral, peces coloridos, tortugas marinas y rayas. Perfecto para familias, principiantes y cualquiera que quiera explorar las aguas cristalinas del Caribe. Proporcionamos todo el equipo y aseguramos una experiencia segura y divertida para todos.',
         duration: '4-5 horas',
-        price: '$70 USD',
+        price: 'MXN 1,400',
         requirements: [
           'Habilidad básica de natación',
           'Edad mínima: 6 años',
@@ -670,7 +666,7 @@ export const translations = {
         flipButtonText: 'Pruébalo ahora',
         detailedDescription: 'Buceo de Bautismo es una introducción rápida y fácil a lo que se necesita para explorar el mundo submarino. Esta experiencia te da la oportunidad de probar el buceo por primera vez en una piscina y luego en el océano bajo la supervisión directa de un profesional PADI.',
         duration: 'Medio día',
-        price: '$180 USD',
+        price: 'MXN 1,500 ó MXN 3,500',
         medicalForm: '/certificado medico.pdf',
         requirements: [
           'Edad mínima: 10 años',
@@ -699,8 +695,8 @@ export const translations = {
         description: '¡Solo bucea y disfruta! Explora los impresionantes arrecifes de Cozumel con nuestras inmersiones guiadas. Perfecto para buceadores certificados que quieren experimentar los mejores sitios de buceo en el área.',
         flipButtonText: 'Vamos a bucear',
         detailedDescription: 'Únete a nosotros para inmersiones recreativas guiadas para explorar los arrecifes mundialmente famosos de Cozumel. Como buceador certificado, tendrás la oportunidad de bucear en algunos de los mejores sitios del Caribe, conocidos por sus aguas cristalinas, formaciones de coral vibrantes y abundante vida marina.',
-        duration: 'Opciones de medio día a día completo',
-        price: '$150 USD',
+        duration: 'Medio día ',
+        price: 'MXN 2,500',
         medicalForm: '/certificado medico.pdf',
         requirements: [
           'Certificación de buceo válida (cualquier agencia)',
@@ -709,19 +705,16 @@ export const translations = {
           'Experiencia reciente de buceo recomendada'
         ],
         includes: [
-          'Todo el equipo de buceo',
-          '2 inmersiones con tanque',
+          '2 inmersiones desde barco',
           'Guía profesional de buceo',
-          'Transporte en bote',
           'Refrigerios a bordo',
-          'Tarifas del parque marino'
+          'Brazalete del parque marino'
         ],
         highlights: [
           'Explora sitios de buceo de clase mundial',
-          'Observa tortugas, rayas y peces tropicales',
           'Buceo a la deriva con corrientes',
           'Visita paredes y arrecifes famosos',
-          'Grupos pequeños para mejor experiencia',
+          'Precio especial para grupos',
           'Horarios flexibles'
         ]
       },
@@ -752,36 +745,35 @@ export const translations = {
         packages: [
           {
             name: 'Paquete de 4 Inmersiones',
-            price: '$290 USD',
+            price: 'MXN 4,800',
             description: 'Ideal para una estadía corta o una primera experiencia de buceo en Cozumel. Disfruta de inmersiones relajadas con un enfoque personalizado y guía privado.',
             dives: 4,
-            pricePerDive: '$72.50'
+            pricePerDive: 'MXN 1,200'
           },
           {
             name: 'Paquete de 6 Inmersiones',
-            price: '$420 USD',
+            price: 'MXN 6,800',
             description: 'Perfecto para buceadores que quieren explorar más sitios a un ritmo cómodo mientras disfrutan de atención personalizada y flexibilidad.',
             dives: 6,
-            pricePerDive: '$70'
+            pricePerDive: 'MXN 1,133.33'
           },
           {
             name: 'Paquete de 8 Inmersiones',
-            price: '$540 USD',
+            price: 'MXN 8,800',
             description: 'Diseñado para buceadores que buscan una experiencia más profunda, explorando una variedad de sitios de buceo con inmersiones sin prisas y guía privado.',
             dives: 8,
-            pricePerDive: '$67.50'
+            pricePerDive: 'MXN 1,100'
           },
           {
             name: 'Paquete de 10 Inmersiones',
-            price: '$660 USD',
+            price: 'MXN 10,500',
             description: 'Nuestra opción más completa. Ideal para buceadores apasionados que quieren experimentar completamente el mundo submarino de Cozumel con máxima flexibilidad y servicio personalizado.',
             dives: 10,
-            pricePerDive: '$66'
+            pricePerDive: 'MXN 1,050'
           }
         ],
         includes: [
-          'Guía privado de buceo para todas las inmersiones',
-          'Todo el equipo de buceo requerido',
+          'Guía privado',
           'Tanques y plomos',
           'Transporte en barco a los sitios de buceo',
           'Agua y snacks a bordo',
@@ -793,8 +785,7 @@ export const translations = {
           'Ahorra hasta 12% comparado con inmersiones individuales',
           'Máxima flexibilidad - bucea a tu propio ritmo',
           'Guía privado para experiencia personalizada',
-          'Explora múltiples sitios de buceo de clase mundial',
-          'Válido durante toda tu estadía en Cozumel'
+          'Explora múltiples sitios de buceo de clase mundial'
         ]
       }
     },
@@ -862,7 +853,7 @@ export const translations = {
         },
         {
           question: '¿Cuáles son los mejores sitios de buceo en la zona?',
-          answer: 'Palancar (Gardens, Caves, Horseshoe), Santa Rosa Wall, Colombia y Cedral — todos famosos por su visibilidad, buceo a la deriva y arrecifes vibrantes.'
+          answer: 'Palancar (Gardens & Caves), Santa Rosa Wall, Colombia y Cedral — todos famosos por su visibilidad, buceo a la deriva y arrecifes vibrantes.'
         },
         {
           question: '¿Ofrecen Nitrox?',
@@ -902,7 +893,7 @@ export const translations = {
         },
         {
           question: '¿Cuál es el tamaño típico del grupo?',
-          answer: 'Mantenemos grupos pequeños para garantizar una experiencia relajada y personalizada.'
+          answer: 'Mantenemos grupos pequeños desde 2 a 4 personas.'
         },
         {
           question: '¿El Parque Marino tiene reglas?',

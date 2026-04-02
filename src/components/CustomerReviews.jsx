@@ -23,8 +23,8 @@ const CustomerReviews = () => {
       country: 'Argentina',
       rating: 5,
       date: '2025-12-13',
-      text: 'An unforgettable experience. Juan taught us so much and was attentive at all times. 100% recommended!',
-      textEs: 'Experiencia inolvidable, Juan nos enseñó muchísimo y estuvo pendiente siempre. Recomendable 100%!'
+      text: 'Juan is awesome. I was super nervous because it was my first time diving, but he was so patient and made me feel safe the whole time. If youre thinking about diving in Cozumel, go with him.',
+      textEs: 'Juan es increíble. La verdad iba súper nervioso porque era mi primera vez buceando, pero fue tan paciente y me hizo sentir seguro en todo momento. Increíble ver todo lo que hay debajo. Si estás pensando en bucear en Cozumel, ve con él.'
     },
     {
       id: 3,

@@ -52,7 +52,7 @@
 }
 
 .fun-dive-hero img {
-  object-position: center 30%;
+  object-position: center 60%;
 }
 
 .rescue-hero img {
@@ -61,6 +61,11 @@
 
 .dive-packages-hero img {
   object-position: center 55%;
+}
+
+.snorkel-hero img {
+  object-position: center 45%;
+  transform: scale(0.92);
 }
 
 .course-detail-hero-content {

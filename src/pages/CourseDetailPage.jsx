@@ -90,7 +90,7 @@ const CourseDetailPage = () => {
 
         <main className="course-detail-main">
           <div className="course-detail-hero">
-            <div className={`course-detail-hero-image ${courseId === 'fun-dive' ? 'fun-dive-hero' : ''} ${courseId === 'rescue' ? 'rescue-hero' : ''} ${courseId === 'dive-packages' ? 'dive-packages-hero' : ''}`}>
+            <div className={`course-detail-hero-image ${courseId === 'fun-dive' ? 'fun-dive-hero' : ''} ${courseId === 'rescue' ? 'rescue-hero' : ''} ${courseId === 'dive-packages' ? 'dive-packages-hero' : ''} ${courseId === 'snorkel-trips' ? 'snorkel-hero' : ''}`}>
               <img src={courseData.image} alt={course.title} />
             </div>
             <div className="course-detail-hero-content">

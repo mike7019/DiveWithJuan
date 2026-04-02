@@ -10,6 +10,7 @@ const FAQPage = () => {
   const [openIndex, setOpenIndex] = useState(null);
   const { language } = useLanguage();
   const t = translations[language].faqPage;
+  const baseUrl = import.meta.env.BASE_URL;
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -19,7 +20,12 @@ const FAQPage = () => {
     <>
       <Navigation />
       <div className="faq-page">
-        <div className="faq-hero">
+        <div
+          className="faq-hero"
+          style={{
+            backgroundImage: `url(${baseUrl}images-courses/faqs.jpeg)`
+          }}
+        >
           <div className="faq-hero-content">
             <h1>{t.title}</h1>
             <p>{t.subtitle}</p>
