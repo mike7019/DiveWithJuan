@@ -10,6 +10,7 @@ const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [servicesOpen, setServicesOpen] = useState(false);
+  const [isIOS, setIsIOS] = useState(false);
   const { language } = useLanguage();
   const t = translations[language].nav;
   const baseUrl = import.meta.env.BASE_URL;
@@ -25,6 +26,44 @@ const Navigation = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    const isIOSDevice = /iPad|iPhone|iPod/.test(userAgent) ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+    setIsIOS(isIOSDevice);
+  }, []);
+
+  useEffect(() => {
+    if (!isIOS) {
+      return;
+    }
+
+    if (!menuOpen) {
+      return;
+    }
+
+    const scrollY = window.scrollY;
+    const originalStyle = {
+      position: document.body.style.position,
+      top: document.body.style.top,
+      width: document.body.style.width,
+      overflow: document.body.style.overflow
+    };
+
+    document.body.style.position = 'fixed';
+    document.body.style.top = `-${scrollY}px`;
+    document.body.style.width = '100%';
+    document.body.style.overflow = 'hidden';
+
+    return () => {
+      document.body.style.position = originalStyle.position;
+      document.body.style.top = originalStyle.top;
+      document.body.style.width = originalStyle.width;
+      document.body.style.overflow = originalStyle.overflow;
+      window.scrollTo(0, scrollY);
+    };
+  }, [menuOpen, isIOS]);
+
   const handleLinkClick = () => {
     setMenuOpen(false);
     // Don't close services immediately if we want to keep state, but usually we want to reset
@@ -37,7 +76,7 @@ const Navigation = () => {
   };
 
   return (
-    <nav className={`navigation ${isScrolled ? 'scrolled' : ''}`}>
+    <nav className={`navigation ${isScrolled ? 'scrolled' : ''} ${isIOS ? 'is-ios' : ''}`}>
       <div className="container nav-container">
         <button className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
           <FaBars />

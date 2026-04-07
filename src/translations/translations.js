@@ -10,7 +10,7 @@ export const translations = {
       diveCourses: 'Dive Courses',
       recreationalDiving: 'Recreational Diving',
       snorkeling: 'Snorkeling',
-      dsd: 'Discover Dive',
+      dsd: 'Discover scuba diving',
       openWater: 'Open Water Course',
       advancedCourse: 'Advanced Course',
       rescue: 'Rescue Course',
