@@ -418,22 +418,44 @@
     border-bottom: none;
   }
 
-  .submenu-title {
-    color: rgba(255, 255, 255, 0.8);
+  .navigation.is-ios .submenu-title {
+    color: #ffffff;
     font-size: 13px;
     margin-bottom: 5px;
   }
 
-  .submenu-items li a {
+  .navigation.is-ios .submenu-items li a,
+  .navigation.is-ios.navigation.scrolled .submenu-items li a {
     font-size: 15px;
     padding: 12px 10px;
-    color: var(--white);
+    color: #ffffff !important;
     border-bottom: none;
   }
 
-  .submenu-items li a:hover {
+  .navigation.is-ios .submenu-items li a:hover,
+  .navigation.is-ios.navigation.scrolled .submenu-items li a:hover {
     background: rgba(255, 255, 255, 0.1);
-    color: var(--white);
+    color: #ffffff !important;
+  }
+
+  .navigation.is-ios .nav-links {
+    top: 0;
+    bottom: 0;
+    height: auto;
+    max-height: none;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+    overscroll-behavior-y: contain;
+    touch-action: pan-y;
+    padding-bottom: calc(40px + env(safe-area-inset-bottom));
+  }
+
+  .navigation.is-ios .dropdown-menu {
+    max-height: none;
+  }
+
+  .navigation.is-ios .dropdown-menu.show {
+    overflow: visible;
   }
 }
 
